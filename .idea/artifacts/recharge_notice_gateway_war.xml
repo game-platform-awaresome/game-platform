@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="recharge-notice-gateway:war">
+    <output-path>$PROJECT_DIR$/recharge-notice-gateway/target</output-path>
+    <root id="archive" name="recharge-notice-gateway.war">
+      <element id="artifact" artifact-name="recharge-notice-gateway:war exploded" />
+    </root>
+  </artifact>
+</component>

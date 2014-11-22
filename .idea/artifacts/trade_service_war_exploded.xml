@@ -1,0 +1,68 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="trade-service:war exploded">
+    <output-path>$PROJECT_DIR$/trade-service/target/trade-service</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="trade-service/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="trade-service" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="trade-common-1.001.001-SNAPSHOT.jar">
+            <element id="module-output" name="trade-common" />
+          </element>
+          <element id="archive" name="common-utilities-1.001.001-SNAPSHOT.jar">
+            <element id="module-output" name="common-utilities" />
+          </element>
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.1.3" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.1.4" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:3.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-asm:3.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:0.9.29" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:0.9.29" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.6.1" />
+          <element id="library" level="project" name="Maven: org.mongodb:mongo-java-driver:2.6.5" />
+          <element id="library" level="project" name="Maven: com.google.code.morphia:morphia:0.99" />
+          <element id="library" level="project" name="Maven: activemq:activemq-spring:2.1" />
+          <element id="library" level="project" name="Maven: com.google.gson:gson:1.7.1" />
+          <element id="library" level="project" name="Maven: net.sf.json-lib:json-lib:jdk15:2.4" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.0" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.5" />
+          <element id="library" level="project" name="Maven: net.sf.ezmorph:ezmorph:1.0.6" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:3.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:3.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-jaxrs:2.2.1.GA" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:jaxrs-api:2.2.1.GA" />
+          <element id="library" level="project" name="Maven: org.scannotation:scannotation:1.0.3" />
+          <element id="library" level="project" name="Maven: javassist:javassist:3.12.1.GA" />
+          <element id="library" level="project" name="Maven: javax.annotation:jsr250-api:1.0" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+          <element id="library" level="project" name="Maven: commons-httpclient:commons-httpclient:3.1" />
+          <element id="library" level="project" name="Maven: net.jcip:jcip-annotations:1.0" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-spring:2.2.1.GA" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-jettison-provider:2.2.1.GA" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-jaxb-provider:2.2.1.GA" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.4" />
+          <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.2.3" />
+          <element id="library" level="project" name="Maven: javax.xml.stream:stax-api:1.0" />
+          <element id="library" level="project" name="Maven: com.sun.xml.stream:sjsxp:1.0.1" />
+          <element id="library" level="project" name="Maven: org.codehaus.jettison:jettison:1.2" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-jackson-provider:2.2.1.GA" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.6.3" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.6.3" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.6.3" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-xc:1.6.3" />
+          <element id="library" level="project" name="Maven: org.jboss.resteasy:async-http-servlet-3.0:2.2.1.GA" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-test:3.0.5.RELEASE" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

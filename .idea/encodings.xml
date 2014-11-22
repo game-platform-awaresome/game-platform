@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/UserAccountString.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/dao/AccountingDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/dao/RechargeAppAccountDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/dao/TradeAppAccountDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/dao/UserAccountDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/dao/impl/AccountingDaoImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/dao/impl/BasicDaoImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/dao/impl/RechargeAppAccountDaoImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/dao/impl/TradeAppAccountDaoImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/dao/impl/UserAccountDaoImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/entity/AccountItem.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/entity/Accounting.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/entity/RechargeAppAccount.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/entity/TradeAppAccount.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/entity/UserAccount.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/service/RechargeAppAccountService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/service/TradeAppAccountService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/service/UserAccountService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/service/impl/RechargeAppAccountServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/service/impl/TradeAppAccountServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/service/impl/UserAccountServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/util/SignUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-cp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-cp/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-utilities" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitoring-http" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/recharge-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/recharge-mobile-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/recharge-notice-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trade-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trade-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trade-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trade-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trade-sms-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/warehouse-service" charset="UTF-8" />
+  </component>
+</project>
+

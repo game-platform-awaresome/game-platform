@@ -1,0 +1,1628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="a3586551-cb92-4cd3-b179-5a7d80d69704" name="Default" comment="" />
+    <ignored path="game-platform.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/web.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412077127874" ignored="false" />
+    <file path="/MBeanManager.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368500205271" ignored="false" />
+    <file path="/Main.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368500702152" ignored="false" />
+    <file path="/AppAccountResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368502552564" ignored="false" />
+    <file path="/AppAccount.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368501719472" ignored="false" />
+    <file path="/AppAccountString.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368501840422" ignored="false" />
+    <file path="/AppAccountService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368501866782" ignored="false" />
+    <file path="/UserAccount.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371273777411" ignored="false" />
+    <file path="/AppAccountServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368502494974" ignored="false" />
+    <file path="/AppAccountJMX.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368502114091" ignored="false" />
+    <file path="/AppAccountJMXMBean.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368502096157" ignored="false" />
+    <file path="/AppAccountDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368502134692" ignored="false" />
+    <file path="/AppBasicDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368502214990" ignored="false" />
+    <file path="/AppAccountDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368502329739" ignored="false" />
+    <file path="/config.properties" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412058182960" ignored="false" />
+    <file path="/applicationContext.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415276232719" ignored="false" />
+    <file path="/UserAccountServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372824952474" ignored="false" />
+    <file path="/UserAccountResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369221874668" ignored="false" />
+    <file path="$PROJECT_DIR$/../pushwithIos/ios-gateway/src/test/java/com/babeeta/butterfly/application/gateway/ios/impl/AccountServiceImplTest.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368509466739" ignored="false" />
+    <file path="/AccountServiceImplTest.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368509383823" ignored="false" />
+    <file path="/MD5Util.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368516333274" ignored="false" />
+    <file path="/TokenVerifyFilter.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1370144121295" ignored="false" />
+    <file path="/pom.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414462609911" ignored="false" />
+    <file path="/UserResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371273702268" ignored="false" />
+    <file path="/UserAccountService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369487883358" ignored="false" />
+    <file path="/UserAccountDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1370075075725" ignored="false" />
+    <file path="/UserAccountDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371570092814" ignored="false" />
+    <file path="/RechargeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1370161949013" ignored="false" />
+    <file path="/RechargeService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371288136130" ignored="false" />
+    <file path="/MessageServiceJMX.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368602795924" ignored="false" />
+    <file path="/MessageServiceJMXMBean.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368602677252" ignored="false" />
+    <file path="/BasicDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414732709133" ignored="false" />
+    <file path="/CperSyncServlet.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371562337617" ignored="false" />
+    <file path="/recharge.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368590251665" ignored="false" />
+    <file path="/RechargeString.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368692350569" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/resource/TradeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597839552" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/util/MD5.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597839552" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/monitor/MessageServiceJMXMBean.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597839552" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/util/RSAUtil.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597839829" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/util/Digest.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597839829" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/monitor/MessageServiceJMX.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597839829" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/util/DateUtil.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597839829" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/util/HttpUtils.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597841453" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/resource/RechargeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597839830" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/entity/Recharge.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597839829" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/resource/CperSyncServlet.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597841453" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/util/ConvertUtils.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597839829" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/util/JSONUtils.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597839829" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/util/Base64.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597839829" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/util/RechargeString.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597839829" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/trade/util/CpTransSyncSignValid.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597839830" ignored="false" />
+    <file path="$PROJECT_DIR$/trade-gateway/src/main/java/com/future/gameplatform/trade/service/RechargeService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368597918106" ignored="false" />
+    <file path="/CperSyncJMX.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368601027891" ignored="false" />
+    <file path="/CperGetTranslogServlet.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1370697870597" ignored="false" />
+    <file path="/CperGetTransLogJMXBean.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368601879996" ignored="false" />
+    <file path="/CperGetTransLogJMX.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368602001384" ignored="false" />
+    <file path="/TradeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1370315812326" ignored="false" />
+    <file path="/RechargeServiceJMX.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368602797407" ignored="false" />
+    <file path="/TradeServiceJMX.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368602929931" ignored="false" />
+    <file path="/GameResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372774876238" ignored="false" />
+    <file path="/GameService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372773008616" ignored="false" />
+    <file path="/Trade.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369476237024" ignored="false" />
+    <file path="/Game.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372768905275" ignored="false" />
+    <file path="/GameString.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1370600088831" ignored="false" />
+    <file path="/GameServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372979460901" ignored="false" />
+    <file path="/GameDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1370613131658" ignored="false" />
+    <file path="/fragment.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415171453423" ignored="false" />
+    <file path="/GameDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372980227456" ignored="false" />
+    <file path="/UserAccountString.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411710952689" ignored="false" />
+    <file path="/UserAccountJMX.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369221995896" ignored="false" />
+    <file path="/UserAccountJMXMBean.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368668343729" ignored="false" />
+    <file path="/UserBasicDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369027089938" ignored="false" />
+    <file path="/GameJMX.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368669398585" ignored="false" />
+    <file path="/Recharge.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1408256067713" ignored="false" />
+    <file path="/accounting.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368699067020" ignored="false" />
+    <file path="/RechargeServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373723809638" ignored="false" />
+    <file path="/RechargeDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1408256263093" ignored="false" />
+    <file path="/RechargeDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1370707494825" ignored="false" />
+    <file path="/TradeService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368777005502" ignored="false" />
+    <file path="/TradeServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1370315855878" ignored="false" />
+    <file path="/TradeDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368777562091" ignored="false" />
+    <file path="/TradeString.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373708773853" ignored="false" />
+    <file path="/AccountingHelper.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373531383831" ignored="false" />
+    <file path="/AbstractHttpRPCService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413095419251" ignored="false" />
+    <file path="/AccountingService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368699135022" ignored="false" />
+    <file path="/AccountingDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368759813079" ignored="false" />
+    <file path="/Accounting.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371273821174" ignored="false" />
+    <file path="/AccountingDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1368761988973" ignored="false" />
+    <file path="/TradeDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1370315955913" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-user/src/main/java/com/future/gameplateform/account/dao/AccountingDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369113065110" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-user/src/main/java/com/future/gameplateform/account/dao/impl/AccountingDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369113065110" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-user/src/main/java/com/future/gameplateform/account/dao/UserAccountDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369113065110" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-user/src/main/java/com/future/gameplateform/account/dao/impl/UserAccountDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369113065111" ignored="false" />
+    <file path="/SomeTest.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373713301740" ignored="false" />
+    <file path="/UserIds.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369120916231" ignored="false" />
+    <file path="/UserIdsDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369120948379" ignored="false" />
+    <file path="/UserIdsDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369816424393" ignored="false" />
+    <file path="/IdFactory.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369125254996" ignored="false" />
+    <file path="/SendValidCodeHelper.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1370144585587" ignored="false" />
+    <file path="/MobileCode.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1370160911652" ignored="false" />
+    <file path="/MobileCodeDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369130388360" ignored="false" />
+    <file path="/MobileCodeDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1370160963181" ignored="false" />
+    <file path="/HttpUtils.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369406002673" ignored="false" />
+    <file path="/RechargeGetTranlogHelper.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369490464573" ignored="false" />
+    <file path="/RechargeAppAccount.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411697195579" ignored="false" />
+    <file path="/RechargeAppAccountDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1408245480576" ignored="false" />
+    <file path="/RechargeAppAccountDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414647359122" ignored="false" />
+    <file path="/RechargeAppAccountService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411722666932" ignored="false" />
+    <file path="/RechargeAppAccountServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414389418781" ignored="false" />
+    <file path="/RechargeAppAccountResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414733831687" ignored="false" />
+    <file path="/TradeAppAccount.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369476616029" ignored="false" />
+    <file path="/TradeAppAccountDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369476700670" ignored="false" />
+    <file path="/TradeAppAccountDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369476794148" ignored="false" />
+    <file path="/TradeAppAccountServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369477150222" ignored="false" />
+    <file path="/TradeAppAccountService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369477122405" ignored="false" />
+    <file path="/TradeAppAccountResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369477097782" ignored="false" />
+    <file path="/AccountingBalanceHelper.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369485147052" ignored="false" />
+    <file path="/TestRestAppAccount.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373595966899" ignored="false" />
+    <file path="/Dummy.txt" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1416668564624" ignored="false" />
+    <file path="/TestRestRecharge.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371345685129" ignored="false" />
+    <file path="/RechargeClient.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369891442660" ignored="false" />
+    <file path="/TradeTest.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369892675118" ignored="false" />
+    <file path="/TestSMS.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1369979022955" ignored="false" />
+    <file path="/AppRegisterClient.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372821990147" ignored="false" />
+    <file path="/GameAccountClient.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373769492493" ignored="false" />
+    <file path="/TestGameAccount.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371386320375" ignored="false" />
+    <file path="/GamePlatformClient.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372980475956" ignored="false" />
+    <file path="/TestGame.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372980709906" ignored="false" />
+    <file path="/TradeGatewayClient.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371349677817" ignored="false" />
+    <file path="/TestTrade.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371345370986" ignored="false" />
+    <file path="/RestfulClient.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1370687898619" ignored="false" />
+    <file path="/RPCHelper.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1370696429331" ignored="false" />
+    <file path="/SmsNotice.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371459388084" ignored="false" />
+    <file path="/SmsNoticeDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371280126558" ignored="false" />
+    <file path="/SmsNoticeDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371280687983" ignored="false" />
+    <file path="/MobileNoticeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371441489683" ignored="false" />
+    <file path="/MobileNoticeService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372666273657" ignored="false" />
+    <file path="/MobileNoticeServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373721080128" ignored="false" />
+    <file path="/JCHNoticeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371448396950" ignored="false" />
+    <file path="/RequestEntity.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371480108591" ignored="false" />
+    <file path="/ResponseEntity.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371447699014" ignored="false" />
+    <file path="/RequestEntityDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371459023719" ignored="false" />
+    <file path="/RequestEntityDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371459275932" ignored="false" />
+    <file path="/JCHShortNoticeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371478019754" ignored="false" />
+    <file path="/JCHShortRequestEntityDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371478196662" ignored="false" />
+    <file path="/JCHShortRequestEntityDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371478289033" ignored="false" />
+    <file path="/JCHShortRequestEntity.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371480002108" ignored="false" />
+    <file path="/DCDBNoticeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371480323017" ignored="false" />
+    <file path="/DCDBNotice.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371479966088" ignored="false" />
+    <file path="/DCDBNoticeDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371480626799" ignored="false" />
+    <file path="/DCDBNoticeDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371480748695" ignored="false" />
+    <file path="/MHNoticeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372666295948" ignored="false" />
+    <file path="/MHNotice.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372666362679" ignored="false" />
+    <file path="/MHNoticeDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371483026984" ignored="false" />
+    <file path="/MHNoticeDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371483168148" ignored="false" />
+    <file path="/TimerListener.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371561305439" ignored="false" />
+    <file path="/JobTimer.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371561345351" ignored="false" />
+    <file path="/CpTransSyncSignValid.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371568949334" ignored="false" />
+    <file path="$PROJECT_DIR$/../LTE/reliable-push/src/main/java/com/babeeta/butterfly/reliable/ReliablePushImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371615915335" ignored="false" />
+    <file path="/ReliablePushImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371615910873" ignored="false" />
+    <file path="$PROJECT_DIR$/../LTE/reliable-push/pom.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1371613833196" ignored="false" />
+    <file path="/GameTradeAccountClient.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372401057034" ignored="false" />
+    <file path="/MHnotice2Resource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372666311287" ignored="false" />
+    <file path="/UserLoginHistory.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372770401282" ignored="false" />
+    <file path="/UserLoginHistoryDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372770475512" ignored="false" />
+    <file path="/UserLoginHistoryDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372770811407" ignored="false" />
+    <file path="/UserOpenResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1372822702243" ignored="false" />
+    <file path="/RechargeNoticeCPHelper.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1375785739176" ignored="false" />
+    <file path="/SignUtil.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415175217646" ignored="false" />
+    <file path="/NoticeCPTaskService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373701488280" ignored="false" />
+    <file path="/NoticeCPTaskServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373773824443" ignored="false" />
+    <file path="/NoticeCPTask.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1375862141294" ignored="false" />
+    <file path="/NoticeCPRecord.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373773518650" ignored="false" />
+    <file path="/NoticeCPRecordDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373705364843" ignored="false" />
+    <file path="/NoticeCPRecordDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373773638323" ignored="false" />
+    <file path="/AppInitListener.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373722789952" ignored="false" />
+    <file path="$PROJECT_DIR$/../scinema/orderManage/src/test/java/com/scinema1/oltp/test/ClientTest.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373810379308" ignored="false" />
+    <file path="$PROJECT_DIR$/../scinema/orderManage/src/main/java/com/scinema/oltp/controller/CinemaResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373811217245" ignored="false" />
+    <file path="/CinemaResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373811147259" ignored="false" />
+    <file path="$PROJECT_DIR$/../scinema/orderManage/src/test/java/com/scinema1/oltp/test/util/CinemaResourceTest.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373811346514" ignored="false" />
+    <file path="/CinemaResourceTest.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1373811260161" ignored="false" />
+    <file path="$PROJECT_DIR$/../trade-platform/common-platform/src/main/java/com/zhubao/b2b/trade/platform/service/impl/UserKshopHelper.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1380433206387" ignored="false" />
+    <file path="/UserKshopHelper.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1380434979590" ignored="false" />
+    <file path="$PROJECT_DIR$/../trade-platform/test-kit/src/main/java/com/zhubao/b2b/trade/testkit/kshop/UserLoginTest.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1380439307889" ignored="false" />
+    <file path="/UserLoginTest.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1380432660641" ignored="false" />
+    <file path="/BasicModuleTest.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1380424613040" ignored="false" />
+    <file path="$PROJECT_DIR$/../trade-platform/test-kit/src/main/java/com/zhubao/b2b/trade/testkit/BasicModuleTest.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1380424614466" ignored="false" />
+    <file path="$PROJECT_DIR$/../trade-platform/common-platform/src/main/java/com/zhubao/b2b/trade/platform/service/impl/KshopHelper.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1380434981980" ignored="false" />
+    <file path="/KshopHelper.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1380433832761" ignored="false" />
+    <file path="/MobileRechargeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1408234512873" ignored="false" />
+    <file path="/CUDynamicSmsResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413095199530" ignored="false" />
+    <file path="/CUDynamicNoticeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1408269985928" ignored="false" />
+    <file path="/CMCCSdkResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413607889002" ignored="false" />
+    <file path="/SMSDirectResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415793367764" ignored="false" />
+    <file path="/CMCCSdkNoticeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1408269993556" ignored="false" />
+    <file path="/SdkNoticeService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1416313673832" ignored="false" />
+    <file path="/rechargeDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1408253206288" ignored="false" />
+    <file path="/CTPageResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415792927168" ignored="false" />
+    <file path="/SdkNoticeSerivceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1416313924791" ignored="false" />
+    <file path="/RechargeStatusEnum.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1408257088342" ignored="false" />
+    <file path="/SmsRechargeDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1408270281706" ignored="false" />
+    <file path="/SmsRechargeDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1408270241955" ignored="false" />
+    <file path="/RechargeStateEnum.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1408261876208" ignored="false" />
+    <file path="/SmsRecharge.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411550948761" ignored="false" />
+    <file path="/RequestChannelHelper.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413607210184" ignored="false" />
+    <file path="/RechargeConstants.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415275957453" ignored="false" />
+    <file path="/ServiceResult.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1408259480184" ignored="false" />
+    <file path="/NoticeCpHelper.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415065262643" ignored="false" />
+    <file path="/ChannelNoticeService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1416400205662" ignored="false" />
+    <file path="/ChannelNoticeServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1416400331159" ignored="false" />
+    <file path="/CUPageResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415793099863" ignored="false" />
+    <file path="/CTSMSDirectNoticeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1408399970131" ignored="false" />
+    <file path="/NoticeCPTargetTestResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1408800779682" ignored="false" />
+    <file path="/MobileTest.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415794477200" ignored="false" />
+    <file path="/TestNoticeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415936514757" ignored="false" />
+    <file path="/ImportCode.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1409129835160" ignored="false" />
+    <file path="/SysUser.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411295290004" ignored="false" />
+    <file path="/spring-config.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412389232447" ignored="false" />
+    <file path="/UserService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412230824698" ignored="false" />
+    <file path="/UserRealm.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412251484478" ignored="false" />
+    <file path="/IndexController.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411296322326" ignored="false" />
+    <file path="/UserController.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411622393161" ignored="false" />
+    <file path="/PasswordHelper.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411296529367" ignored="false" />
+    <file path="/UserServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412254574467" ignored="false" />
+    <file path="/UserDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411621103611" ignored="false" />
+    <file path="/UserDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411621379327" ignored="false" />
+    <file path="/spring-mvc.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412293025617" ignored="false" />
+    <file path="/macro.vm" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411299418985" ignored="false" />
+    <file path="/head.html" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411302886020" ignored="false" />
+    <file path="/footer.html" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411302981752" ignored="false" />
+    <file path="/header.html" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414986062108" ignored="false" />
+    <file path="/login.html" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411628599860" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/webapp/WEB-INF/web.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411356362069" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/java/com/fanya/p2p/front/user/jcaptcha/GMailEngine.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411357597560" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/java/com/fanya/p2p/front/user/jcaptcha/MyManageableImageCaptchaService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411354580459" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/java/com/fanya/p2p/front/user/jcaptcha/JCaptchaValidateFilter.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411354580459" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/java/com/fanya/p2p/front/user/jcaptcha/JCaptchaFilter.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411354580459" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/java/com/fanya/p2p/front/user/jcaptcha/MyFormAuthenticationFilter.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411354580459" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/java/com/fanya/p2p/front/user/jcaptcha/JCaptcha.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411354580459" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/pom.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412252633908" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/webapp/WEB-INF/Templates/login.html" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411374062351" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/resources/spring-config.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412293729675" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/pom.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412252562629" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/resources/spring-config-shiro.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412340055165" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/entity/Role.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411365382248" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/OrganizationServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237666529" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/AuthorizationService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411365827865" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/entity/App.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411365382248" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/PasswordHelper.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411365979180" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/dao/UserDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237409697" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/dao/AuthorizationDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237179731" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/dao/RoleDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412238167868" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/RoleService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411366016411" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/dao/ResourceDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237203316" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/AppServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415176306578" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/dao/UserDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237224455" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/dao/RoleDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237215501" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/dao/OrganizationDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237190846" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/OrganizationService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411365890116" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/entity/Authorization.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411365382248" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/ResourceService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411365992693" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/UserServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412254574805" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/ResourceServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237706897" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/AppService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411365805605" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/dao/AuthorizationDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237298494" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/dao/AppDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237255532" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/dao/OrganizationDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237318059" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/UserService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411365864136" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/entity/User.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411365382249" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/RoleServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237739756" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/entity/Resource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411365382249" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/dao/AppDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237169710" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/entity/Organization.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411365382249" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/AuthorizationServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413963655138" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/dao/ResourceDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237343086" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/pom.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411371850631" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/resources/spring-config.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412389232447" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/spring/SpringUtils.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411367089993" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/resources/spring-config-dubbo.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411368014303" ignored="false" />
+    <file path="/spring-config-dubbo.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411368006930" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/UserServiceMain.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412238871594" ignored="false" />
+    <file path="/UserServiceMain.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411368524803" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/pom.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412387635779" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/resources/spring-config-dubbo-consumer.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412250380231" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/resources/spring-config-dubbo-provider.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412239926870" ignored="false" />
+    <file path="/spring-config-dubbo-provider.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412239926870" ignored="false" />
+    <file path="/spring-config-dubbo-consumer.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412250355572" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/java/com/fanya/p2p/front/user/service/UserServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411372973145" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/java/com/fanya/p2p/front/user/realm/UserRealm.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415936056404" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/java/com/fanya/p2p/front/user/session/scheduler/MySqlSessionValidationScheduler.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411376926087" ignored="false" />
+    <file path="/CUPlainSmsResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413091264699" ignored="false" />
+    <file path="/CUPlainSmsNoticeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415537021898" ignored="false" />
+    <file path="/Organization.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411623683141" ignored="false" />
+    <file path="/Resource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411623698899" ignored="false" />
+    <file path="/Role.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411623708666" ignored="false" />
+    <file path="/User.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411623715473" ignored="false" />
+    <file path="/OrganizationDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411620375420" ignored="false" />
+    <file path="/ResourceDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411620412308" ignored="false" />
+    <file path="/RoleDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411620434325" ignored="false" />
+    <file path="/OrganizationDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411622121904" ignored="false" />
+    <file path="/ResourceDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411621638659" ignored="false" />
+    <file path="/RoleDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411621505089" ignored="false" />
+    <file path="/OrganizationService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412230737963" ignored="false" />
+    <file path="/OrganizationServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237660153" ignored="false" />
+    <file path="/ResourceService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412230644267" ignored="false" />
+    <file path="/ResourceServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237705751" ignored="false" />
+    <file path="/RoleServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237737880" ignored="false" />
+    <file path="/RoleService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412230789946" ignored="false" />
+    <file path="/spring-config-shiro.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412340050367" ignored="false" />
+    <file path="/register.html" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411624022409" ignored="false" />
+    <file path="/LoginController.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412339855891" ignored="false" />
+    <file path="/index.html" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412315213400" ignored="false" />
+    <file path="$PROJECT_DIR$/../shiro-example/shiro-example-chapter22/src/main/resources/resources.properties" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411627464909" ignored="false" />
+    <file path="$PROJECT_DIR$/../shiro-example/shiro-example-chapter12/src/main/resources/spring-beans.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411629374919" ignored="false" />
+    <file path="/spring-beans.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411629373235" ignored="false" />
+    <file path="$PROJECT_DIR$/../shiro-example/shiro-example-chapter12/src/main/java/com/github/zhangkaitao/shiro/chapter12/dao/UserDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411629587858" ignored="false" />
+    <file path="$PROJECT_DIR$/../shiro-example/shiro-example-chapter22/src/main/java/com/github/zhangkaitao/shiro/chapter22/dao/UserDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411631251644" ignored="false" />
+    <file path="/header.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414986283486" ignored="false" />
+    <file path="/login.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411828972816" ignored="false" />
+    <file path="/index.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412316991347" ignored="false" />
+    <file path="/head.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412315801978" ignored="false" />
+    <file path="/ChannelController.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413609459755" ignored="false" />
+    <file path="/SettleController.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411811147015" ignored="false" />
+    <file path="/AccountItem.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413077556442" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/service/impl/RechargeAppAccountServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781656477" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/resource/TradeAppAccountResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781657167" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/entity/UserAccount.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781656477" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/service/RechargeAppAccountService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781656477" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/service/TradeAppAccountService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781656477" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/service/UserAccountService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781657167" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/entity/RechargeAppAccount.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781656477" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/dao/impl/RechargeAppAccountDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781657167" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/dao/impl/UserAccountDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781656477" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/service/impl/UserAccountServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781656477" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/dao/impl/AccountingDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781656477" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/entity/AccountItem.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781656477" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/entity/Accounting.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781656478" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/resource/RechargeAppAccountResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781656478" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/resource/UserResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781657167" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/dao/impl/TradeAppAccountDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781656478" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/service/impl/TradeAppAccountServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781656478" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-common/src/main/java/game/entity/TradeAppAccount.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781656478" ignored="false" />
+    <file path="$PROJECT_DIR$/warehouse-service/src/main/java/com/future/gameplatform/warehouse/entity/Game.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781738245" ignored="false" />
+    <file path="$PROJECT_DIR$/test-kit/src/main/java/com/babeeta/butterfly/testkit/server/rest/GamePlatformClient.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781738245" ignored="false" />
+    <file path="$PROJECT_DIR$/test-kit/src/test/java/com/babeeta/butterfly/testkit/server/rest/TestGame.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781738245" ignored="false" />
+    <file path="$PROJECT_DIR$/warehouse-service/src/main/java/com/future/gameplatform/warehouse/resource/GameResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411781738245" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/encodings.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411782233204" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411782299634" ignored="false" />
+    <file path="/showdetail.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411870078836" ignored="false" />
+    <file path="/list.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411867032043" ignored="false" />
+    <file path="/cpconfigDetail.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411870012288" ignored="false" />
+    <file path="/config1step.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411861918515" ignored="false" />
+    <file path="/config1stepedit.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1411868392089" ignored="false" />
+    <file path="/account-service-game.iml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412057227950" ignored="false" />
+    <file path="/TestResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412058648745" ignored="false" />
+    <file path="$PROJECT_DIR$/account-service-cp/src/main/webapp/index.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412077653425" ignored="false" />
+    <file path="$PROJECT_DIR$/../dubbo-test/pom.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412224055169" ignored="false" />
+    <file path="$PROJECT_DIR$/../dubbo-test/dubbo-provider/pom.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412224094303" ignored="false" />
+    <file path="$PROJECT_DIR$/../dubbo-test/dubbo-provider/src/main/resources/log4j.properties" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412224740695" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/resources/log4j.properties" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415602281051" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/service/PasswordHelper.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237816548" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/service/ResourceService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412230651246" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/service/AppService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412230709877" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/service/AuthorizationService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412230709877" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/service/OrganizationService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412230742027" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/service/RoleService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412230793525" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/service/UserService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412230832869" ignored="false" />
+    <file path="/resources.properties" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237123836" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/resources/resources.properties" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412237123836" ignored="false" />
+    <file path="/AppServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415176304508" ignored="false" />
+    <file path="/AuthorizationServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413963622893" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/java/com/fanya/p2p/front/user/remote/RemoteService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412240535794" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/java/com/fanya/p2p/front/user/web/shiro/filter/SysUserFilter.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412296202262" ignored="false" />
+    <file path="/SysUserFilter.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412240991609" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/resources/spring-mvc-remote-service.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412241582677" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-common/pom.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412249620034" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-client-common/pom.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412249809495" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-home-web/pom.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412249923291" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-i-web/pom.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412249984054" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/resources/spring-mvc.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412315453523" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/webapp/WEB-INF/jsp/login.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412251872589" ignored="false" />
+    <file path="$PROJECT_DIR$/../dubbo-test/dubbo-consumer-web/src/main/resources/spring-config.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412288625021" ignored="false" />
+    <file path="$PROJECT_DIR$/../dubbo-test/dubbo-consumer-web/src/main/resources/spring-mvc.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412292734833" ignored="false" />
+    <file path="/TestController.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412288610143" ignored="false" />
+    <file path="$PROJECT_DIR$/../dubbo-test/dubbo-consumer-web/src/main/java/com/fanya/dubbotest/web/controller/TestController.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412288611096" ignored="false" />
+    <file path="$PROJECT_DIR$/../dubbo-test/dubbo-consumer-web/pom.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412288683382" ignored="false" />
+    <file path="$PROJECT_DIR$/../dubbo-test/dubbo-provider/src/main/resources/dubbo-provider.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412292540048" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/webapp/WEB-INF/Templates/index.html" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412315213400" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/webapp/WEB-INF/jsp/common/head.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412316740137" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/webapp/WEB-INF/jsp/common/footer.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412315832976" ignored="false" />
+    <file path="/footer.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412315833271" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/webapp/WEB-INF/jsp/common/header.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414986302164" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/webapp/WEB-INF/jsp/index.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412338893076" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/java/com/fanya/p2p/front/user/web/controller/UserController.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412318965561" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/webapp/WEB-INF/jsp/unauthorized.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412338871072" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/java/com/fanya/p2p/front/user/web/controller/LoginController.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412340019287" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-user-web/src/main/webapp/WEB-INF/jsp/register.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412341301606" ignored="false" />
+    <file path="/register.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412341170326" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/resources/config/mybatis-config.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412388571329" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/resources/config/generatorConfiguration.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412389378977" ignored="false" />
+    <file path="/generatorConfiguration.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1412389372073" ignored="false" />
+    <file path="/CUPlainSmsGameResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413091287003" ignored="false" />
+    <file path="/CUPlainSmsGameNoticeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413092405363" ignored="false" />
+    <file path="/SMSDirectCUResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415793604951" ignored="false" />
+    <file path="/CMCCDynamicGameResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413095155407" ignored="false" />
+    <file path="/CMCCDynamicSmsResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413095227080" ignored="false" />
+    <file path="/CMCCDynamicNoticeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413095996875" ignored="false" />
+    <file path="/CMCCDynamicSmsNoticeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413096105308" ignored="false" />
+    <file path="/DynamicNoticeAllInOneResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413604899015" ignored="false" />
+    <file path="/DynamicAllinOneResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414036187736" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/resources/config/mappers/SysAppMapper.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413961189421" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/resources/config/mappers/SysOrganizationMapper.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413961782891" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/resources/config/mappers/SysResourceMapper.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413961796351" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/resources/config/mappers/SysRoleMapper.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413961809557" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/resources/config/mappers/SysUserAppRolesMapper.xml" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1413961819262" ignored="false" />
+    <file path="/SMSFilter.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414044447486" ignored="false" />
+    <file path="/Keyword.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414042960991" ignored="false" />
+    <file path="/KeyValid.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414044498901" ignored="false" />
+    <file path="/Device.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414732500752" ignored="false" />
+    <file path="/DeviceDao.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414733313500" ignored="false" />
+    <file path="/DeviceDaoImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414733358911" ignored="false" />
+    <file path="/DeviceService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414732961991" ignored="false" />
+    <file path="/DeviceServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414733475282" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-i-web/src/main/webapp/WEB-INF/Templates/common/header.html" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1414986112676" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/utils/SignUtil.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415175218434" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/BaseServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415172608677" ignored="false" />
+    <file path="/BaseServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415174069548" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/SignServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415174996362" ignored="false" />
+    <file path="/SignServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415174070252" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/BasicServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415174996362" ignored="false" />
+    <file path="/BasicServiceImpl.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415174756330" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/user-service/src/main/java/com/fanya/p2p/core/user/service/SignService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415174271521" ignored="false" />
+    <file path="/SMSDirectAllInOneNoticeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415271369736" ignored="false" />
+    <file path="/PageAllInOneNoticeResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415539596676" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/service/LoanService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415593796205" ignored="false" />
+    <file path="/LoanService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415593794070" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/entity/Loan.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415593845335" ignored="false" />
+    <file path="/Loan.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415593835855" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/service/ProductService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415595541242" ignored="false" />
+    <file path="/ProductService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415595536894" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/entity/ProductExample.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415595454253" ignored="false" />
+    <file path="/ProductExample.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415595453755" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/entity/LoanExample.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415595446403" ignored="false" />
+    <file path="/LoanExample.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415595444941" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/prod-service/src/main/resources/log4j.properties" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415602295454" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-core/account-service/src/main/resources/log4j.properties" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415602300143" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/entity/Product.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415607425742" ignored="false" />
+    <file path="/Product.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415607341962" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/service/LoanReturnService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415608724456" ignored="false" />
+    <file path="/LoanReturnService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415608693172" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-common/p2p-dubbo-service/src/main/java/com/fanya/p2p/common/service/ProdReturnService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415608724456" ignored="false" />
+    <file path="/ProdReturnService.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415608719284" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-i-web/src/main/java/com/fanya/p2p/front/i/web/service/AccountServiceLocal.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415868529783" ignored="false" />
+    <file path="/AccountServiceLocal.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415868528836" ignored="false" />
+    <file path="/shiro-client.properties" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415935068544" ignored="false" />
+    <file path="$PROJECT_DIR$/../fanya-p2p/p2p-i-web/src/main/resources/client/shiro-client.properties" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1415935068544" ignored="false" />
+    <file path="/AlipayResource.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1416313664362" ignored="false" />
+    <file path="/AlipayCore.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1416314996277" ignored="false" />
+    <file path="/AlipayNotify.java" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1416315021904" ignored="false" />
+    <file path="/notify.jsp" changelist="a3586551-cb92-4cd3-b179-5a7d80d69704" time="1416400539117" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/test-kit/src/main/java/com/babeeta/butterfly/testkit/server/servlet/app/gateway/OldQueryClient.java" line="36" class="com.babeeta.butterfly.testkit.server.servlet.app.gateway.OldQueryClient" package="com.babeeta.butterfly.testkit.server.servlet.app.gateway">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/admin-gateway/src/main/java/com/future/gameplatform/admin/web/controller/ChannelController.java" line="186" class="com.future.gameplatform.admin.web.controller.ChannelController" package="com.future.gameplatform.admin.web.controller">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/admin-gateway/src/main/java/com/future/gameplatform/admin/web/controller/ChannelController.java" line="137" class="com.future.gameplatform.admin.web.controller.ChannelController" package="com.future.gameplatform.admin.web.controller">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/admin-gateway/src/main/java/com/future/gameplatform/admin/web/controller/ChannelController.java" line="147" class="com.future.gameplatform.admin.web.controller.ChannelController" package="com.future.gameplatform.admin.web.controller">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/account-service-common/src/main/java/com/future/gameplatform/account/game/dao/impl/RechargeAppAccountDaoImpl.java" line="200" class="com.future.gameplatform.account.game.dao.impl.RechargeAppAccountDaoImpl" package="com.future.gameplatform.account.game.dao.impl">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/admin-gateway/src/main/java/com/future/gameplatform/admin/web/controller/ChannelController.java" line="143" class="com.future.gameplatform.admin.web.controller.ChannelController" package="com.future.gameplatform.admin.web.controller">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/recharge-notice-gateway/src/test/java/com/future/gameplatform/recharge/notice/gateway/resource/TestNoticeResource.java" line="191" class="com.future.gameplatform.recharge.notice.gateway.resource.TestNoticeResource" package="com.future.gameplatform.recharge.notice.gateway.resource">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="game-platform" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="notify.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recharge-notice-gateway/src/main/webapp/notify.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="63" selection-start="2796" selection-end="2809" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AlipayResource.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/recharge-mobile-gateway/src/main/java/com/future/gameplatform/recharge/mobile/gateway/resource/AlipayResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="19" selection-start="1304" selection-end="1312" vertical-scroll-proportion="0.07335907">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SMSDirectAllInOneNoticeResource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway/resource/SMSDirectAllInOneNoticeResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="81" column="0" selection-start="3923" selection-end="4459" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChannelNoticeServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recharge-common/src/main/java/com/future/gameplatform/recharge/common/service/impl/ChannelNoticeServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="113" column="25" selection-start="4790" selection-end="4803" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoticeCpHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recharge-common/src/main/java/com/future/gameplatform/recharge/common/service/impl/NoticeCpHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="43" selection-start="2048" selection-end="2048" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChannelNoticeService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recharge-common/src/main/java/com/future/gameplatform/recharge/common/service/ChannelNoticeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="57" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/recharge-mobile-gateway/src/test/java/com/gp/test/gateway/mobile/recharge/MobileTest.java" />
+        <option value="$PROJECT_DIR$/recharge-notice-gateway/src/test/java/com/future/gameplatform/recharge/notice/gateway/resource/TestNoticeResource.java" />
+        <option value="$PROJECT_DIR$/recharge-mobile-gateway/src/main/java/com/future/gameplatform/recharge/mobile/gateway/resource/AlipayResource.java" />
+        <option value="$PROJECT_DIR$/recharge-common/src/main/java/com/future/gameplatform/recharge/common/service/SdkNoticeService.java" />
+        <option value="$PROJECT_DIR$/recharge-common/src/main/java/com/future/gameplatform/recharge/common/service/impl/SdkNoticeSerivceImpl.java" />
+        <option value="$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway/resource/AlipayNoticeResource.java" />
+        <option value="$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway/resource/AlipayCore.java" />
+        <option value="$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway/resource/AlipayNotify.java" />
+        <option value="$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway/util/AlipayConfig.java" />
+        <option value="$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway/util/AlipayCore.java" />
+        <option value="$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway/util/Base64.java" />
+        <option value="$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway/util/AlipayNotify.java" />
+        <option value="$PROJECT_DIR$/recharge-notice-gateway/src/main/webapp/notify_url.jsp" />
+        <option value="$PROJECT_DIR$/recharge-common/src/main/java/com/future/gameplatform/recharge/common/service/ChannelNoticeService.java" />
+        <option value="$PROJECT_DIR$/recharge-common/src/main/java/com/future/gameplatform/recharge/common/service/impl/ChannelNoticeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/recharge-notice-gateway/src/main/webapp/notify.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\Program Files\apache-maven-3.1.1" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Game Platform" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1618" />
+    <option name="height" value="870" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game-platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game-platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game-platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game-platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game-platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recharge-mobile-gateway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game-platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game-platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recharge-mobile-gateway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game-platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game-platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recharge-mobile-gateway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game-platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game-platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recharge-mobile-gateway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LTEAgent" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.future.gameplatform.account.resource" />
+      <recent name="com.future.gameplatform.account.game" />
+      <recent name="com.future.gameplatform.account.game.util" />
+      <recent name="com.future.gameplatform.admin.service" />
+      <recent name="com.future.gameplatform.admin.web.exception" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaSpace\game-platform\recharge-notice-gateway\src\main\java\com\future\gameplatform\recharge\notice\gateway\util" />
+      <recent name="D:\ideaSpace\game-platform\recharge-notice-gateway\src\main\java\com\future\gameplatform\recharge\notice\gateway\resource" />
+      <recent name="D:\ideaSpace\game-platform\recharge-notice-gateway\src\main\webapp" />
+      <recent name="D:\ideaSpace\game-platform\account-service-cp\src\main\java" />
+      <recent name="D:\ideaSpace\game-platform\account-service-cp\src\main\resources" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.future.gameplatform.account.game.entity" />
+      <recent name="com.future.gameplatform.trade.service.impl" />
+      <recent name="com.future.gameplatform.trade.resource" />
+      <recent name="com.future.gameplatform.trade.sms.bean" />
+      <recent name="com.future.gameplatform.trade.sms.service" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.future.gameplatform.recharge.common" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.recharge-notice-gateway [org.mortbay.jetty:jetty-maven-plugin:8.1.8.v20121106:run]">
+    <configuration default="false" name="TestNoticeResource.TestSmsDResource" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.future.gameplatform.recharge.notice.gateway.resource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="recharge-notice-gateway" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.future.gameplatform.recharge.notice.gateway.resource" />
+      <option name="MAIN_CLASS_NAME" value="com.future.gameplatform.recharge.notice.gateway.resource.TestNoticeResource" />
+      <option name="METHOD_NAME" value="TestSmsDResource" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MobileTest.TestGETAcccResource" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.gp.test.gateway.mobile.recharge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="recharge-mobile-gateway" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.gp.test.gateway.mobile.recharge" />
+      <option name="MAIN_CLASS_NAME" value="com.gp.test.gateway.mobile.recharge.MobileTest" />
+      <option name="METHOD_NAME" value="TestGETAcccResource" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MobileTest.TestCUPageResource1" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.gp.test.gateway.mobile.recharge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="recharge-mobile-gateway" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.gp.test.gateway.mobile.recharge" />
+      <option name="MAIN_CLASS_NAME" value="com.gp.test.gateway.mobile.recharge.MobileTest" />
+      <option name="METHOD_NAME" value="TestCUPageResource1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestNoticeResource.TestSysProp" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.future.gameplatform.recharge.notice.gateway.resource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="recharge-notice-gateway" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.future.gameplatform.recharge.notice.gateway.resource" />
+      <option name="MAIN_CLASS_NAME" value="com.future.gameplatform.recharge.notice.gateway.resource.TestNoticeResource" />
+      <option name="METHOD_NAME" value="TestSysProp" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="recharge-notice-gateway [org.mortbay.jetty:jetty-maven-plugin:8.1.8.v20121106:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="org.mortbay.jetty:jetty-maven-plugin:8.1.8.v20121106:run" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/recharge-notice-gateway" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestNoticeResource.TestSmsDResource" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MobileTest.TestGETAcccResource" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MobileTest.TestCUPageResource1" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestNoticeResource.TestSysProp" />
+      <item index="4" class="java.lang.String" itemvalue="Maven.recharge-notice-gateway [org.mortbay.jetty:jetty-maven-plugin:8.1.8.v20121106:run]" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Maven.recharge-notice-gateway [org.mortbay.jetty:jetty-maven-plugin:8.1.8.v20121106:run]" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestNoticeResource.TestSysProp" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MobileTest.TestCUPageResource1" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MobileTest.TestGETAcccResource" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestNoticeResource.TestSmsDResource" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="false">C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3586551-cb92-4cd3-b179-5a7d80d69704" name="Default" comment="" />
+      <created>1368499963733</created>
+      <updated>1368499963733</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1618" height="870" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2495935" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34670487" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5716332" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967743" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26911765" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967743" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967743" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3338109" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14064516" sideWeight="0.46848136" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28064516" sideWeight="0.46848136" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53151864" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="92" y="92" width="1096" height="576" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26217765" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24411765" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="VssConfiguration">
+    <option name="CLIENT_PATH" value="" />
+    <option name="SRCSAFEINI_PATH" value="" />
+    <option name="USER_NAME" value="" />
+    <option name="PWD" value="" />
+    <CheckoutOptions>
+      <option name="COMMENT" value="" />
+      <option name="DO_NOT_GET_LATEST_VERSION" value="false" />
+      <option name="REPLACE_WRITABLE" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckoutOptions>
+    <CheckinOptions>
+      <option name="COMMENT" value="" />
+      <option name="KEEP_CHECKED_OUT" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckinOptions>
+    <AddOptions>
+      <option name="STORE_ONLY_LATEST_VERSION" value="false" />
+      <option name="CHECK_OUT_IMMEDIATELY" value="false" />
+    </AddOptions>
+    <UndocheckoutOptions>
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="REPLACE_LOCAL_COPY" value="2" />
+      <option name="RECURSIVE" value="false" />
+    </UndocheckoutOptions>
+    <GetOptions>
+      <option name="REPLACE_WRITABLE" value="0" />
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="ANSWER_NEGATIVELY" value="false" />
+      <option name="ANSWER_POSITIVELY" value="false" />
+      <option name="RECURSIVE" value="false" />
+      <option name="VERSION" />
+    </GetOptions>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/recharge-common/src/main/java/com/future/gameplatform/recharge/common/service/impl/RequestChannelHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="29" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recharge-notice-gateway/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recharge-notice-gateway/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway/util/AlipayCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway/util/Base64.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway/util/RSA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway/util/AlipayConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="3" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recharge-common/src/main/java/com/future/gameplatform/recharge/common/service/impl/SdkNoticeSerivceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="491" column="101" selection-start="24114" selection-end="24121" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway/util/AlipayNotify.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="16" selection-start="530" selection-end="539" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway/resource/DynamicNoticeAllInOneResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="32" selection-start="892" selection-end="912" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recharge-common/src/main/java/com/future/gameplatform/recharge/common/service/ChannelNoticeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="57" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recharge-common/src/main/java/com/future/gameplatform/recharge/common/service/impl/NoticeCpHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="43" selection-start="2048" selection-end="2048" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recharge-notice-gateway/src/main/java/com/future/gameplatform/recharge/notice/gateway/resource/SMSDirectAllInOneNoticeResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="0" selection-start="3923" selection-end="4459" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recharge-common/src/main/java/com/future/gameplatform/recharge/common/service/impl/ChannelNoticeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="25" selection-start="4790" selection-end="4803" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recharge-notice-gateway/src/main/webapp/notify.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="63" selection-start="2796" selection-end="2809" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recharge-mobile-gateway/src/main/java/com/future/gameplatform/recharge/mobile/gateway/resource/AlipayResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="19" selection-start="1304" selection-end="1312" vertical-scroll-proportion="0.07335907">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>account-service-game:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>account-service-cp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21630093" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: activemq:activemq-spring:2.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

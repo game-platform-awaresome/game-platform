@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    <context:property-placeholder location="classpath:config.properties"/>
+    <context:annotation-config />
+
+    <bean id="CMCCDynamicGameNoticeResource"
+          class="com.future.gameplatform.recharge.notice.gateway.resource.CMCCDynamicGameNoticeResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="channelNoticeService" ref="channelNoticeService"/>
+    </bean>
+
+    <bean id="CMCCDynamicSmsNoticeResource"
+          class="com.future.gameplatform.recharge.notice.gateway.resource.CMCCDynamicSmsNoticeResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="channelNoticeService" ref="channelNoticeService"/>
+    </bean>
+
+    <bean id="CMCCSdkNoticeResource"
+          class="com.future.gameplatform.recharge.notice.gateway.resource.CMCCSdkNoticeResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="channelNoticeService" ref="channelNoticeService"/>
+    </bean>
+
+    <bean id="CTSMSDirectNoticeResource"
+          class="com.future.gameplatform.recharge.notice.gateway.resource.CTSMSDirectNoticeResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="channelNoticeService" ref="channelNoticeService"/>
+    </bean>
+
+    <bean id="CUDynamicNoticeResource"
+          class="com.future.gameplatform.recharge.notice.gateway.resource.CUDynamicNoticeResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="channelNoticeService" ref="channelNoticeService"/>
+    </bean>
+
+    <bean id="CUPlainSmsGameNoticeResource"
+          class="com.future.gameplatform.recharge.notice.gateway.resource.CUPlainSmsGameNoticeResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="channelNoticeService" ref="channelNoticeService"/>
+    </bean>
+
+    <bean id="CUPlainSmsNoticeResource"
+          class="com.future.gameplatform.recharge.notice.gateway.resource.CUPlainSmsNoticeResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="channelNoticeService" ref="channelNoticeService"/>
+    </bean>
+
+    <bean id="CUSMSDirectNoticeResource"
+          class="com.future.gameplatform.recharge.notice.gateway.resource.CUSMSDirectNoticeResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="channelNoticeService" ref="channelNoticeService"/>
+    </bean>
+
+    <bean id="DynamicNoticeAllInOneResource"
+            class="com.future.gameplatform.recharge.notice.gateway.resource.DynamicNoticeAllInOneResource"
+            scope="singleton"
+            lazy-init="false">
+        <property name="channelNoticeService" ref="channelNoticeService"/>
+    </bean>
+
+    <bean id="SMSDirectAllInOneNoticeResource"
+          class="com.future.gameplatform.recharge.notice.gateway.resource.SMSDirectAllInOneNoticeResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="channelNoticeService" ref="channelNoticeService"/>
+    </bean>
+
+    <bean id="PageAllInOneNoticeResource"
+          class="com.future.gameplatform.recharge.notice.gateway.resource.PageAllInOneNoticeResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="channelNoticeService" ref="channelNoticeService"/>
+    </bean>
+
+    <bean id="NoticeCPTargetTestResource"
+          class="com.future.gameplatform.recharge.notice.gateway.resource.NoticeCPTargetTestResource"
+          scope="singleton"
+          lazy-init="false">
+    </bean>
+
+
+    <bean id="channelNoticeService"
+          class="com.future.gameplatform.recharge.common.service.impl.ChannelNoticeServiceImpl"
+          scope="singleton"
+          lazy-init="false">
+        <property name="smsRechargeDao" ref="smsRechargeDao"/>
+        <property name="noticeCpHelper" ref="noticeCpHelper"/>
+    </bean>
+
+    <bean id="smsRechargeDao"
+          class="com.future.gameplatform.recharge.common.dao.impl.SmsRechargeDaoImpl"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="java.lang.String" value="${mongo-domain}" />
+        <constructor-arg type="java.lang.String" value="${db-name}" />
+    </bean>
+
+    <bean id="requestChannelHelper"
+          class="com.future.gameplatform.recharge.common.service.impl.RequestChannelHelper"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="int" value="${accounting-maxConnection}" />
+    </bean>
+
+    <bean id="noticeCpHelper"
+          class="com.future.gameplatform.recharge.common.service.impl.NoticeCpHelper"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="int" value="${accounting-maxConnection}" />
+    </bean>
+
+</beans>

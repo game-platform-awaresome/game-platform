@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/account-service-common/account-service-common.iml" filepath="$PROJECT_DIR$/account-service-common/account-service-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-service-cp/account-service-cp.iml" filepath="$PROJECT_DIR$/account-service-cp/account-service-cp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-service-user/account-service-user.iml" filepath="$PROJECT_DIR$/account-service-user/account-service-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin-gateway/admin-gateway.iml" filepath="$PROJECT_DIR$/admin-gateway/admin-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/application.iml" filepath="$PROJECT_DIR$/application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-utilities/common-utilities.iml" filepath="$PROJECT_DIR$/common-utilities/common-utilities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monitoring-http/monitoring-http.iml" filepath="$PROJECT_DIR$/monitoring-http/monitoring-http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recharge-common/recharge-common.iml" filepath="$PROJECT_DIR$/recharge-common/recharge-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recharge-mobile-gateway/recharge-mobile-gateway.iml" filepath="$PROJECT_DIR$/recharge-mobile-gateway/recharge-mobile-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recharge-notice-gateway/recharge-notice-gateway.iml" filepath="$PROJECT_DIR$/recharge-notice-gateway/recharge-notice-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-kit/test-kit.iml" filepath="$PROJECT_DIR$/test-kit/test-kit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trade-common/trade-common.iml" filepath="$PROJECT_DIR$/trade-common/trade-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trade-gateway/trade-gateway.iml" filepath="$PROJECT_DIR$/trade-gateway/trade-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trade-service/trade-service.iml" filepath="$PROJECT_DIR$/trade-service/trade-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trade-sms-gateway/trade-sms-gateway.iml" filepath="$PROJECT_DIR$/trade-sms-gateway/trade-sms-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/warehouse-service/warehouse-service.iml" filepath="$PROJECT_DIR$/warehouse-service/warehouse-service.iml" />
+    </modules>
+  </component>
+</project>
+

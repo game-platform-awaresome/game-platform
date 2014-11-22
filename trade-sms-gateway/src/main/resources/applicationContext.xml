@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:context="http://www.springframework.org/schema/context"
+     xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    <context:property-placeholder location="classpath:config.properties"/>
+    <context:annotation-config />
+
+	<bean id="mobileNoticeResource"
+          class="com.future.gameplatform.trade.sms.resource.MobileNoticeResource"
+          scope="singleton"
+          lazy-init="false">
+		<property name="mobileNoticeService" ref="mobileNoticeService"/>
+	</bean>
+
+    <bean id="jchNoticeResource"
+          class="com.future.gameplatform.trade.sms.resource.JCHNoticeResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="mobileNoticeService" ref="mobileNoticeService"/>
+    </bean>
+
+    <bean id="jchShortNoticeResource"
+          class="com.future.gameplatform.trade.sms.resource.JCHShortNoticeResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="mobileNoticeService" ref="mobileNoticeService"/>
+    </bean>
+
+    <bean id="DCDBNoticeResource"
+          class="com.future.gameplatform.trade.sms.resource.DCDBNoticeResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="mobileNoticeService" ref="mobileNoticeService"/>
+    </bean>
+
+    <bean id="MHNoticeResource"
+          class="com.future.gameplatform.trade.sms.resource.MHNoticeResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="mobileNoticeService" ref="mobileNoticeService"/>
+    </bean>
+
+    <bean id="MHnotice2Resource"
+          class="com.future.gameplatform.trade.sms.resource.MHnotice2Resource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="mobileNoticeService" ref="mobileNoticeService"/>
+    </bean>
+
+	<bean id="rechargeService"
+          class="com.future.gameplatform.trade.service.impl.RechargeServiceImpl"
+          scope="singleton"
+          lazy-init="false">
+        <property name="rechargeDao" ref="rechargeDao"/>
+        <property name="accountingHelper" ref="accountingHelper"/>
+        <property name="rechargeGetTranlogHelper" ref="rechargeGetTranlogHelper"/>
+        <property name="noticeCPRecordDao" ref="noticeCPRecordDao"/>
+        <property name="noticeCPTaskService" ref="noticeCPTaskService"/>
+        <property name="rechargeNoticeCPHelper" ref="rechargeNoticeCPHelper"/>
+	</bean>
+
+    <bean id="mobileNoticeService"
+          class="com.future.gameplatform.trade.service.impl.MobileNoticeServiceImpl"
+          scope="singleton"
+          lazy-init="false">
+        <property name="smsNoticeDao" ref="smsNoticeDao"/>
+        <property name="rechargeService" ref="rechargeService"/>
+        <property name="requestEntityDao" ref="requestEntityDao"/>
+        <property name="jchShortRequestEntityDao" ref="jchShortRequestEntityDao"/>
+        <property name="dcdbNoticeDao" ref="dcdbNoticeDao"/>
+        <property name="mhNoticeDao" ref="mhNoticeDao"/>
+        <property name="rechargeNoticeCPHelper" ref="rechargeNoticeCPHelper"/>
+        <property name="noticeCPRecordDao" ref="noticeCPRecordDao"/>
+        <property name="noticeCPTaskService" ref="noticeCPTaskService"/>
+
+    </bean>
+
+    <bean id="noticeCPRecordDao"
+          class="com.future.gameplatform.trade.dao.impl.NoticeCPRecordDaoImpl"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="String" value="${mongo-domain}" />
+        <constructor-arg type="String" value="${db-name}" />
+    </bean>
+
+    <bean id="noticeCPTaskService"
+          class="com.future.gameplatform.trade.service.impl.NoticeCPTaskServiceImpl"
+          scope="singleton"
+          lazy-init="false">
+        <property name="capacity" value="${NoticeCPTask-queue-capacity}" />
+        <property name="maxInQueueTimeDistance" value="${NoticeCPTask-maxTimeDistance}" />
+        <property name="noticeCPRecordDao" ref="noticeCPRecordDao"/>
+        <property name="rechargeNoticeCPHelper" ref="rechargeNoticeCPHelper"/>
+    </bean>
+
+    <bean id="rechargeNoticeCPHelper"
+          class="com.future.gameplatform.trade.service.impl.RechargeNoticeCPHelper"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="int" value="${accounting-maxConnection}" />
+        <constructor-arg type="String" value="${accounting-domain}" />
+        <constructor-arg type="int" value="${accounting-port}"/>
+    </bean>
+
+	<bean id="rechargeDao"
+          class="com.future.gameplatform.trade.dao.impl.RechargeDaoImpl"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="String" value="${mongo-domain}" />
+        <constructor-arg type="String" value="${db-name}" />
+	</bean>
+
+    <bean id="smsNoticeDao"
+          class="com.future.gameplatform.trade.dao.impl.SmsNoticeDaoImpl"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="String" value="${mongo-domain}" />
+        <constructor-arg type="String" value="${db-name}" />
+    </bean>
+
+    <bean id="requestEntityDao"
+          class="com.future.gameplatform.trade.dao.impl.RequestEntityDaoImpl"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="String" value="${mongo-domain}" />
+        <constructor-arg type="String" value="${db-name}" />
+    </bean>
+
+    <bean id="jchShortRequestEntityDao"
+          class="com.future.gameplatform.trade.dao.impl.JCHShortRequestEntityDaoImpl"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="String" value="${mongo-domain}" />
+        <constructor-arg type="String" value="${db-name}" />
+    </bean>
+
+    <bean id="dcdbNoticeDao"
+          class="com.future.gameplatform.trade.dao.impl.DCDBNoticeDaoImpl"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="String" value="${mongo-domain}" />
+        <constructor-arg type="String" value="${db-name}" />
+    </bean>
+
+    <bean id="mhNoticeDao"
+          class="com.future.gameplatform.trade.dao.impl.MHNoticeDaoImpl"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="String" value="${mongo-domain}" />
+        <constructor-arg type="String" value="${db-name}" />
+    </bean>
+
+    <bean id="accountingHelper"
+          class="com.future.gameplatform.trade.service.impl.AccountingHelper"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="int" value="${accounting-maxConnection}" />
+        <constructor-arg type="String" value="${accounting-domain}" />
+        <constructor-arg type="int" value="${accounting-port}"/>
+        <constructor-arg type="String" value="${userbalance-domain}"/>
+        <constructor-arg type="int" value="${userbalance-port}"/>
+        <constructor-arg type="String" value="${gf-appid}"/>
+    </bean>
+
+    <bean id="rechargeGetTranlogHelper"
+          class="com.future.gameplatform.trade.service.impl.RechargeGetTranlogHelper"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="int" value="${gettranlog-maxConnection}" />
+        <constructor-arg type="String" value="${gettranlog-domain}" />
+        <constructor-arg type="int" value="${gettranlog-port}"/>
+        <constructor-arg type="String" value="${queryAppAccountinfo-url}"/>
+    </bean>
+
+
+
+</beans>

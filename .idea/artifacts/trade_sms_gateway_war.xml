@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="trade-sms-gateway:war">
+    <output-path>$PROJECT_DIR$/trade-sms-gateway/target</output-path>
+    <root id="archive" name="trade-sms-gateway.war">
+      <element id="artifact" artifact-name="trade-sms-gateway:war exploded" />
+    </root>
+  </artifact>
+</component>

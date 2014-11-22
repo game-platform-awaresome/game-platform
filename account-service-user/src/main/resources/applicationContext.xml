@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:context="http://www.springframework.org/schema/context"
+     xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    <context:property-placeholder location="classpath:config.properties"/>  
+
+	<bean id="userOpenResource"
+          class="com.future.gameplatform.account.resource.UserOpenResource"
+          scope="singleton"
+          lazy-init="false">
+		<property name="userAccountService" ref="userAccountService"/>
+	</bean>
+
+    <bean id="userResource"
+          class="com.future.gameplatform.account.resource.UserResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="userAccountService" ref="userAccountService"/>
+    </bean>
+
+	<bean id="userAccountService"
+          class="com.future.gameplatform.account.service.impl.UserAccountServiceImpl"
+          scope="singleton"
+          lazy-init="false">
+		<property name="userAccountDao" ref="userAccountDao"/>
+        <property name="userIdsDao" ref="userIdsDao"/>
+        <property name="sendValidCodeHelper" ref="sendValidCodeHelper"/>
+        <property name="mobileCodeDao" ref="mobileCodeDao"/>
+        <property name="accountingBalanceHelper" ref="accountingBalanceHelper"/>
+        <property name="userLoginHistoryDao" ref="userLoginHistoryDao"/>
+	</bean>
+	
+	<bean id="userAccountDao"
+          class="com.future.gameplatform.account.dao.impl.UserAccountDaoImpl"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="String" value="${mongo-domain}" />
+        <constructor-arg type="String" value="${db-name}" />
+	</bean>
+
+    <bean id="userIdsDao"
+          class="com.future.gameplatform.account.dao.impl.UserIdsDaoImpl"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="String" value="${mongo-domain}" />
+        <constructor-arg type="String" value="${db-name}" />
+    </bean>
+
+    <bean id="mobileCodeDao"
+          class="com.future.gameplatform.account.dao.impl.MobileCodeDaoImpl"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="String" value="${mongo-domain}" />
+        <constructor-arg type="String" value="${db-name}" />
+    </bean>
+
+    <bean id="userLoginHistoryDao"
+          class="com.future.gameplatform.account.dao.impl.UserLoginHistoryDaoImpl"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="String" value="${mongo-domain}" />
+        <constructor-arg type="String" value="${db-name}" />
+    </bean>
+
+    <bean id="sendValidCodeHelper"
+          class="com.future.gameplatform.account.service.impl.SendValidCodeHelper"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="int" value="${sendcode-maxConnection}" />
+        <constructor-arg type="String" value="${sendcode-domain}" />
+        <constructor-arg type="int" value="${sendcode-port}"/>
+        <constructor-arg type="String" value="${sendcode-corpid}" />
+        <constructor-arg type="String" value="${sendcode-passwd}" />
+    </bean>
+
+    <bean id="accountingBalanceHelper"
+          class="com.future.gameplatform.account.service.impl.AccountingBalanceHelper"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="int" value="${accountingbalance-maxConnection}" />
+        <constructor-arg type="String" value="${accountingbalance-domain}" />
+        <constructor-arg type="int" value="${accountingbalance-port}"/>
+    </bean>
+	
+    <bean id="exporter" class="org.springframework.jmx.export.MBeanExporter"
+        lazy-init="false">
+        <property name="beans">
+            <map>
+                <entry key="com.future.gameplatform.account.monitor:name=UserAccountJMX" value-ref="userAccountJMX" />
+            </map>
+        </property>
+    </bean>
+    
+    <bean id="userAccountJMX"
+        class="com.future.gameplatform.account.monitor.UserAccountJMX">
+    </bean>
+</beans>

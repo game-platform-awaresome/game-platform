@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="http://java.sun.com/xml/ns/javaee" 
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+                             id="WebApp_ID" version="3.0" metadata-complete="true">
+                                           
+    <display-name>trade-gateway</display-name>
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:applicationContext.xml</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>org.jboss.resteasy.plugins.server.servlet.ResteasyBootstrap</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>org.jboss.resteasy.plugins.spring.SpringContextLoaderListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>com.future.gameplatform.trade.util.AppInitListener</listener-class>
+    </listener>
+
+    <servlet>
+        <description>爱贝交易记录同步接口</description>
+        <servlet-name>CperSyncServlet</servlet-name>
+        <servlet-class>com.future.gameplatform.trade.resource.CperSyncServlet</servlet-class>
+        <init-param>
+            <description>获取充值app列表url</description>
+            <param-name>getapplisturl</param-name>
+            <param-value>http://pay.2066.cn:8090/0/api/rechargeapp/account/list</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <description>爱贝交易记录查询接口</description>
+        <servlet-name>CperGetTranslogServlet</servlet-name>
+        <servlet-class>com.future.gameplatform.trade.resource.CperGetTranslogServlet</servlet-class>
+        <init-param>
+            <description>商品编号</description>
+            <param-name>appid</param-name>
+            <param-value>20000000000001200000</param-value>
+        </init-param>
+        <init-param>
+            <description>外部订单号</description>
+            <param-name>exorderno</param-name>
+            <param-value>test00001</param-value>
+        </init-param>
+        <init-param>
+            <description>获取充值app列表url</description>
+            <param-name>getapplisturl</param-name>
+            <param-value>http://pay.2066.cn:8090/0/api/rechargeapp/account/list</param-value>
+        </init-param>
+        <init-param>
+            <description>获取交易流水号接口URL</description>
+            <param-name>url</param-name>
+            <param-value>http://211.154.151.196:8084/appchina/transSync</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CperSyncServlet</servlet-name>
+        <url-pattern>/aptrade/api</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CperGetTranslogServlet</servlet-name>
+        <url-pattern>/aptrade/getapi</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="account-service-common" />
+        <module name="account-service-cp" />
+        <module name="account-service-user" />
+        <module name="admin-gateway" />
+        <module name="common-utilities" />
+        <module name="MobileRechargeGateway" />
+        <module name="monitoring-http" />
+        <module name="recharge-common" />
+        <module name="recharge-mobile-gateway" />
+        <module name="recharge-notice-gateway" />
+        <module name="test-kit" />
+        <module name="trade-common" />
+        <module name="trade-gateway" />
+        <module name="trade-service" />
+        <module name="trade-sms-gateway" />
+        <module name="warehouse-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="account-service-common" target="1.6" />
+      <module name="account-service-cp" target="1.6" />
+      <module name="account-service-game" target="1.6" />
+      <module name="account-service-user" target="1.6" />
+      <module name="admin-gateway" target="1.6" />
+      <module name="application" target="1.6" />
+      <module name="common-utilities" target="1.6" />
+      <module name="MobileRechargeGateway" target="1.6" />
+      <module name="monitoring-http" target="1.6" />
+      <module name="recharge-common" target="1.6" />
+      <module name="recharge-mobile-gateway" target="1.6" />
+      <module name="recharge-notice-gateway" target="1.6" />
+      <module name="test-kit" target="1.6" />
+      <module name="trade-common" target="1.6" />
+      <module name="trade-gateway" target="1.6" />
+      <module name="trade-service" target="1.6" />
+      <module name="trade-sms-gateway" target="1.6" />
+      <module name="warehouse-service" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/account-service-cp" />
+    <file type="web" url="file://$PROJECT_DIR$/account-service-game" />
+    <file type="web" url="file://$PROJECT_DIR$/account-service-user" />
+    <file type="web" url="file://$PROJECT_DIR$/admin-gateway" />
+    <file type="web" url="file://$PROJECT_DIR$/recharge-mobile-gateway" />
+    <file type="web" url="file://$PROJECT_DIR$/recharge-notice-gateway" />
+    <file type="web" url="file://$PROJECT_DIR$/trade-gateway" />
+    <file type="web" url="file://$PROJECT_DIR$/trade-service" />
+    <file type="web" url="file://$PROJECT_DIR$/trade-sms-gateway" />
+    <file type="web" url="file://$PROJECT_DIR$/warehouse-service" />
+  </component>
+  <component name="IdProvider" IDEtalkID="8085ACBB26BCED06D96D57B434D68795" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/account-service-cp/pom.xml" />
+        <option value="$PROJECT_DIR$/account-service-game/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>
+

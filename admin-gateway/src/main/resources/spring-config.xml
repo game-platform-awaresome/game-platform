@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+          http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="propertyPlaceholderConfigurer"
+               class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:config.properties</value>
+                <value>classpath:velocity.properties</value>
+            </list>
+        </property>
+        <property name="ignoreResourceNotFound" value="true" />
+    </bean>
+
+    <bean name="userDao" class="com.future.gameplatform.admin.dao.UserDaoImpl">
+        <constructor-arg name="mongoDomain" value="${mongo-domain}"/>
+        <constructor-arg name="dbName" value="${db-name}"/>
+    </bean>
+
+    <bean name="roleDao" class="com.future.gameplatform.admin.dao.RoleDaoImpl">
+        <constructor-arg name="mongoDomain" value="${mongo-domain}"/>
+        <constructor-arg name="dbName" value="${db-name}"/>
+    </bean>
+
+    <bean name="resourceDao" class="com.future.gameplatform.admin.dao.ResourceDaoImpl">
+        <constructor-arg name="mongoDomain" value="${mongo-domain}"/>
+        <constructor-arg name="dbName" value="${db-name}"/>
+    </bean>
+
+    <bean name="organizationDao" class="com.future.gameplatform.admin.dao.OrganizationDaoImpl">
+        <constructor-arg name="mongoDomain" value="${mongo-domain}"/>
+        <constructor-arg name="dbName" value="${db-name}"/>
+    </bean>
+
+    <!-- 扫描注解Bean -->
+    <context:component-scan base-package="com.future.gameplatform.admin">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+
+    <bean id="rechargeAppAccountService"
+          class="com.future.gameplatform.account.game.service.impl.RechargeAppAccountServiceImpl"
+          scope="singleton"
+          lazy-init="false">
+        <property name="rechargeAppAccountDao" ref="rechargeAppAccountDao"/>
+    </bean>
+
+    <bean id="rechargeAppAccountDao"
+          class="com.future.gameplatform.account.game.dao.impl.RechargeAppAccountDaoImpl"
+          scope="singleton"
+          lazy-init="false">
+        <constructor-arg type="java.lang.String" value="${mongo-domain}" />
+        <constructor-arg type="java.lang.String" value="${account-db-name}" />
+    </bean>
+
+    <!-- 开启AOP监听 只对当前配置文件有效 -->
+    <aop:aspectj-autoproxy expose-proxy="true"/>
+
+    <import resource="classpath:spring-config-cache.xml"/>
+    <import resource="classpath:spring-config-shiro.xml"/>
+</beans>
