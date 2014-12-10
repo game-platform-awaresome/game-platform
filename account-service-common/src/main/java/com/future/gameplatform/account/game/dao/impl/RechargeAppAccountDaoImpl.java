@@ -146,47 +146,49 @@ public class RechargeAppAccountDaoImpl extends BasicDaoImpl implements RechargeA
             accountItem.setTargetcode(getFieldValue(itemEntry, "targetcode"));
 
             BasicDBList filterList = (BasicDBList)itemEntry.get("filters");
-            List<SMSFilter> filters = new ArrayList<SMSFilter>();
-            Iterator filterIt = filterList.iterator();
-            while (filterIt.hasNext()){
-                DBObject filterEntry = (DBObject)filterIt.next();
-                SMSFilter smsFilter = new SMSFilter();
-                smsFilter.setFromCode(getFieldValue(filterEntry, "fromCode"));
-                if(filterEntry.get("keywords") != null) {
-                    BasicDBList keywords = (BasicDBList)filterEntry.get("keywords");
-                    List<Keyword> keywordList = new ArrayList<Keyword>();
-                    Iterator keyworkIt = keywords.iterator();
-                    while (keyworkIt.hasNext()){
-                        Object keywordEntry = keyworkIt.next();
-                        Keyword keyword = new Keyword();
-                        if(keywordEntry instanceof DBObject){
-                            keyword.setWord(getFieldValue((DBObject)keywordEntry,"word"));
-                        }else {
-                            keyword.setWord(getTrimValue((String)keywordEntry, "word"));
+            if(filterList != null){
+                List<SMSFilter> filters = new ArrayList<SMSFilter>();
+                Iterator filterIt = filterList.iterator();
+                while (filterIt.hasNext()){
+                    DBObject filterEntry = (DBObject)filterIt.next();
+                    SMSFilter smsFilter = new SMSFilter();
+                    smsFilter.setFromCode(getFieldValue(filterEntry, "fromCode"));
+                    if(filterEntry.get("keywords") != null) {
+                        BasicDBList keywords = (BasicDBList)filterEntry.get("keywords");
+                        List<Keyword> keywordList = new ArrayList<Keyword>();
+                        Iterator keyworkIt = keywords.iterator();
+                        while (keyworkIt.hasNext()){
+                            Object keywordEntry = keyworkIt.next();
+                            Keyword keyword = new Keyword();
+                            if(keywordEntry instanceof DBObject){
+                                keyword.setWord(getFieldValue((DBObject)keywordEntry,"word"));
+                            }else {
+                                keyword.setWord(getTrimValue((String)keywordEntry, "word"));
+                            }
+                            keywordList.add(keyword);
                         }
-                        keywordList.add(keyword);
+                        smsFilter.setKeywords(keywordList);
                     }
-                    smsFilter.setKeywords(keywordList);
-                }
-                if(filterEntry.get("keyValids") != null){
-                    BasicDBList keyValids = (BasicDBList)filterEntry.get("keyValids");
-                    List<KeyValid> keyValidList = new ArrayList<KeyValid>();
-                    Iterator keyvalidIt = keyValids.iterator();
-                    while (keyvalidIt.hasNext()){
-                        Object keyvalidEntry = keyvalidIt.next();
-                        KeyValid keyValid = new KeyValid();
-                        if(keyvalidEntry instanceof DBObject){
-                            keyValid.setKey(getFieldValue((DBObject)keyvalidEntry, "key"));
-                        }else {
-                            keyValid.setKey(getTrimValue((String)keyvalidEntry, "key"));
+                    if(filterEntry.get("keyValids") != null){
+                        BasicDBList keyValids = (BasicDBList)filterEntry.get("keyValids");
+                        List<KeyValid> keyValidList = new ArrayList<KeyValid>();
+                        Iterator keyvalidIt = keyValids.iterator();
+                        while (keyvalidIt.hasNext()){
+                            Object keyvalidEntry = keyvalidIt.next();
+                            KeyValid keyValid = new KeyValid();
+                            if(keyvalidEntry instanceof DBObject){
+                                keyValid.setKey(getFieldValue((DBObject)keyvalidEntry, "key"));
+                            }else {
+                                keyValid.setKey(getTrimValue((String)keyvalidEntry, "key"));
+                            }
+                            keyValidList.add(keyValid);
                         }
-                        keyValidList.add(keyValid);
+                        smsFilter.setKeyValids(keyValidList);
                     }
-                    smsFilter.setKeyValids(keyValidList);
+                    filters.add(smsFilter);
                 }
-                filters.add(smsFilter);
+                accountItem.setFilters(filters);
             }
-            accountItem.setFilters(filters);
             items.add(accountItem);
         }
         rechargeAppAccount.setItems(items);
@@ -228,39 +230,40 @@ public class RechargeAppAccountDaoImpl extends BasicDaoImpl implements RechargeA
             itemObject.put("instruct_sub",itemEntry.getInstruct_sub());
             itemObject.put("targetcode",itemEntry.getTargetcode());
 
-            BasicDBList filters = new BasicDBList();
-            Iterator<SMSFilter> filterIterator = itemEntry.getFilters().iterator();
-            while (filterIterator.hasNext()){
-                SMSFilter filterEntry = filterIterator.next();
-                DBObject filterObject = new BasicDBObject();
-                filterObject.put("fromCode", filterEntry.getFromCode());
-                if(filterEntry.getKeywords() != null){
-                    BasicDBList keywords = new BasicDBList();
-                    Iterator<Keyword> keywordIterator = filterEntry.getKeywords().iterator();
-                    while (keywordIterator.hasNext()){
-                        Keyword keywordEntry = keywordIterator.next();
-                        DBObject keywordObject = new BasicDBObject();
-                        keywordObject.put("word",keywordEntry.getWord());
-                        keywords.add(keywordObject);
+            if(itemEntry.getFilters() != null){
+                BasicDBList filters = new BasicDBList();
+                Iterator<SMSFilter> filterIterator = itemEntry.getFilters().iterator();
+                while (filterIterator.hasNext()){
+                    SMSFilter filterEntry = filterIterator.next();
+                    DBObject filterObject = new BasicDBObject();
+                    filterObject.put("fromCode", filterEntry.getFromCode());
+                    if(filterEntry.getKeywords() != null){
+                        BasicDBList keywords = new BasicDBList();
+                        Iterator<Keyword> keywordIterator = filterEntry.getKeywords().iterator();
+                        while (keywordIterator.hasNext()){
+                            Keyword keywordEntry = keywordIterator.next();
+                            DBObject keywordObject = new BasicDBObject();
+                            keywordObject.put("word",keywordEntry.getWord());
+                            keywords.add(keywordObject);
+                        }
+                        filterObject.put("keywords", keywords);
                     }
-                    filterObject.put("keywords", keywords);
-                }
-                if(filterEntry.getKeyValids() != null){
-                    BasicDBList keyvalids = new BasicDBList();
-                    Iterator<KeyValid> keyValidIterator = filterEntry.getKeyValids().iterator();
-                    while (keyValidIterator.hasNext()){
-                        KeyValid keyValidEntry = keyValidIterator.next();
-                        DBObject keyValidObject = new BasicDBObject();
-                        keyValidObject.put("key", keyValidEntry.getKey());
-                        keyvalids.add(keyValidObject);
+                    if(filterEntry.getKeyValids() != null){
+                        BasicDBList keyvalids = new BasicDBList();
+                        Iterator<KeyValid> keyValidIterator = filterEntry.getKeyValids().iterator();
+                        while (keyValidIterator.hasNext()){
+                            KeyValid keyValidEntry = keyValidIterator.next();
+                            DBObject keyValidObject = new BasicDBObject();
+                            keyValidObject.put("key", keyValidEntry.getKey());
+                            keyvalids.add(keyValidObject);
+                        }
+                        filterObject.put("keyValids",keyvalids);
                     }
-                    filterObject.put("keyValids",keyvalids);
-                }
 
-                filters.add(filterObject);
+                    filters.add(filterObject);
+                }
+                itemObject.put("filters", filters);
             }
-            itemObject.put("filters", filters);
-
             items.add(itemObject);
         }
         dbObject.put("items", items);

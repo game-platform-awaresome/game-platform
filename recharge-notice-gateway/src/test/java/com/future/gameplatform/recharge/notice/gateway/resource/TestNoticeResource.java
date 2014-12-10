@@ -16,6 +16,32 @@ import org.junit.Test;
 public class TestNoticeResource {
 
     @Test
+    public void TestAlipayNotice(){
+        try {
+            PostMethod postMethod = new PostMethod("http://localhost:8080/notify.jsp");
+            postMethod.addRequestHeader("Connection", "Keep-Alive");
+            postMethod.addRequestHeader("Accept-Charset", "UTF-8");
+
+            postMethod.addParameter(new NameValuePair("out_trade_no", "101__123411418218526878"));
+            postMethod.addParameter(new NameValuePair("trade_no", "53f913fd58b0e4b025e3df2f7ccdc96b"));
+            postMethod.addParameter(new NameValuePair("trade_status", "TRADE_FINISHED"));
+            postMethod.addParameter(new NameValuePair("sign", SignUtil.getChannelSign("53f913fd58b0e4b025e3df2f7ccdc96b","WSDKK", "1", "3E04000BBC414EEE")));
+
+
+            HttpClient client = new HttpClient();
+            int status = client.executeMethod(postMethod);
+            if (status == 200) {
+                System.out.println(postMethod.getResponseBodyAsString());
+            } else {
+                System.out.println("error[RPC-doPostDemandOrder] error, http status:[{}]"+status+postMethod.getResponseBodyAsString());
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
     public void TestDynamicAllResource(){
         try {
             PostMethod postMethod = new PostMethod("http://gateway.tonggewang.com/0/api/rechargenotice/all/dynamic");

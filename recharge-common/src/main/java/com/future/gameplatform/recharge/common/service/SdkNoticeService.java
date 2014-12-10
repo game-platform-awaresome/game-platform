@@ -38,5 +38,5 @@ public interface SdkNoticeService {
 
     ServiceResult<SmsRecharge> dynamicAllinoneNotice(String shortcode, String orderno, String fee, String channel);
 
-    ServiceResult<String> alipayNoticeOrderno(String shortCode, String orderno, String channel);
+    ServiceResult<String> alipayNoticeOrderno(String shortCode, String orderno, String channel, String fee);
 }

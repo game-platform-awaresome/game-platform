@@ -45,6 +45,7 @@ public class AlipayResource {
     public Response noticeNo(@QueryParam("code")String shortCode,
                              @QueryParam("orderno")String orderno,
                              @QueryParam("channel")String channel,
+                             @QueryParam("fee")String fee,
                              @QueryParam("sign")String sign){
         logger.debug("sdk request with code:[{}], orderno:[{}], sign:[{}]", new Object[]{shortCode, orderno, sign});
         Map<String,String> result = new HashMap<String, String>();
@@ -53,12 +54,13 @@ public class AlipayResource {
         params.put("code",shortCode);
         params.put("orderno",orderno);
         params.put("channel", channel);
+        params.put("fee", fee);
         if(!SignUtil.checkSdkSign(sign, params, accountMap.get("appkey").toString())) {
             result.put("rtCode","555");
             result.put("rtMsg","数字签名错误");
             return Response.ok(result).build();
         }
-        ServiceResult<String> serviceResult = sdkNoticeService.alipayNoticeOrderno(shortCode, orderno, channel);
+        ServiceResult<String> serviceResult = sdkNoticeService.alipayNoticeOrderno(shortCode, orderno, channel, fee);
         if(serviceResult.isSuccess()){
             result.put("rtCode","000");
             result.put("rtMsg","success");

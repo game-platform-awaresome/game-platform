@@ -1,4 +1,4 @@
-package com.future.gameplatform.recharge.notice.gateway.util;
+package com.future.gameplatform.recharge.notice.gateway.resource;
 
 /* *
  *类名：AlipayConfig

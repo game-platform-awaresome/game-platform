@@ -489,7 +489,7 @@ public class SdkNoticeSerivceImpl implements SdkNoticeService {
     }
 
     @Override
-    public ServiceResult<String> alipayNoticeOrderno(String shortCode, String orderno, String channel) {
+    public ServiceResult<String> alipayNoticeOrderno(String shortCode, String orderno, String channel, String fee) {
         ServiceResult<String> serviceResult = new ServiceResult<String>();
         SmsRecharge smsRecharge = smsRechargeDao.getByCode(shortCode, orderno);
         if(smsRecharge != null){
@@ -504,6 +504,7 @@ public class SdkNoticeSerivceImpl implements SdkNoticeService {
         smsRecharge.setOrderno(orderno);
         smsRecharge.setOperator("alipay");
         smsRecharge.setChannel(channel);
+        smsRecharge.setFee(fee);
         smsRecharge.setCreatedDate(new Date());
         smsRecharge.setState(RechargeStateEnum.SDK_NOTICE.getIndex());
         smsRecharge.setStatus(RechargeStatusEnum.OK.getIndex());

@@ -199,10 +199,40 @@ public class MobileTest {
     }
 
     @Test
+    public void testAlipayNotice(){
+        try{
+            String shortcode = "101";
+            String orderno = "123411414034833333";
+            String fee = "1";
+            String channel = "APEX-alipay-mobile-1-1";
+            String key = "544260cd58b0e4b0043b0a710eaadefa";
+            Map<String,String> params = new HashMap<String, String>();
+            params.put("code",shortcode);
+            params.put("orderno",orderno);
+            params.put("fee",fee);
+            params.put("channel", channel);
+            GetMethod getMethod = new GetMethod("http://gateway.tonggewang.com/0/api/mobilerecharge/alipay/orderno?code="+shortcode+"&orderno="+orderno+"&fee="+fee+"&channel="+channel+"&sign="+ SignUtil.signsdk(params,key));
+            getMethod.addRequestHeader("Connection", "Keep-Alive");
+            getMethod.addRequestHeader("Accept-Charset", "UTF-8");
+            HttpClient client = new HttpClient();
+            int status = 0;
+            status = client.executeMethod(getMethod);
+            System.out.println(getMethod.getQueryString());
+            if (status == 200) {
+                System.out.println(getMethod.getResponseBodyAsString());
+            } else {
+                System.out.println("error [RPC-doPostDemandOrder] error, http status:[{}]"+status+" :"+getMethod.getResponseBodyAsString());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
     public void TestGETAcccResource(){
         try{
             String shortcode = "101";
-            String operator = "ct";
+            String operator = "alipay";
             String fee = "1";
             String version = "1.001.001";
             String key = "544260cd58b0e4b0043b0a710eaadefa";

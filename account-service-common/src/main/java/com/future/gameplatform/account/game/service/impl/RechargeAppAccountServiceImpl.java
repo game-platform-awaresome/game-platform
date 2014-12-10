@@ -175,6 +175,7 @@ public class RechargeAppAccountServiceImpl implements RechargeAppAccountService 
     public RechargeAppAccount getByCode(String shortcode, String operator, String fee, String version) {
         RechargeAppAccount account  = rechargeAppAccountDao.getByShortcode(shortcode);
         AccountItem targetItem = null;
+        AccountItem alipayItem = null;
         List<AccountItem> items = account.getItems();
         Iterator<AccountItem> iterator = items.iterator();
         BigDecimal feed = new BigDecimal(fee);
@@ -182,6 +183,11 @@ public class RechargeAppAccountServiceImpl implements RechargeAppAccountService 
             AccountItem pageEntry = iterator.next();
             BigDecimal fee_mind = new BigDecimal(pageEntry.getFee_min());
             BigDecimal fee_maxd = new BigDecimal(pageEntry.getFee_max());
+            if(pageEntry.getOperator().equalsIgnoreCase("alipay")) {
+                alipayItem = pageEntry;
+                iterator.remove();
+                continue;
+            }
             if(operator != null && !pageEntry.getOperator().equalsIgnoreCase(operator)){
                 iterator.remove();
                 continue;
@@ -218,6 +224,8 @@ public class RechargeAppAccountServiceImpl implements RechargeAppAccountService 
         }
         if(targetItem != null){
             items.add(targetItem);
+        } else {
+            items.add(alipayItem);
         }
 
         account.setAppkey(null);

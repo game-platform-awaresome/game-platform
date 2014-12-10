@@ -97,6 +97,14 @@
         <property name="noticeCpHelper" ref="noticeCpHelper"/>
     </bean>
 
+    <bean id="AlipayResource"
+          class="com.future.gameplatform.recharge.mobile.gateway.resource.AlipayResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="sdkNoticeService" ref="sdkNoticeService"/>
+        <property name="noticeCpHelper" ref="noticeCpHelper"/>
+    </bean>
+
 	<bean id="sdkNoticeService"
           class="com.future.gameplatform.recharge.common.service.impl.SdkNoticeSerivceImpl"
           scope="singleton"

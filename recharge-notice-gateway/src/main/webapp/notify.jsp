@@ -22,8 +22,11 @@
 <%@ page import="org.springframework.context.ApplicationContext" %>
 <%@ page import="com.future.gameplatform.recharge.common.service.ChannelNoticeService" %>
 <%@ page import="com.future.gameplatform.recharge.common.util.ServiceResult" %>
+<%@ page import="org.slf4j.LoggerFactory" %>
+<%@ page import="org.slf4j.Logger" %>
 <%
 	//获取支付宝POST过来反馈信息
+    Logger logger = LoggerFactory.getLogger("alipay-notify");
 	Map<String,String> params = new HashMap<String,String>();
 	Map requestParams = request.getParameterMap();
 	for (Iterator iter = requestParams.keySet().iterator(); iter.hasNext();) {
@@ -37,20 +40,19 @@
 		//乱码解决，这段代码在出现乱码时使用。如果mysign和sign不相等也可以使用这段代码转化
 		//valueStr = new String(valueStr.getBytes("ISO-8859-1"), "gbk");
 		params.put(name, valueStr);
+        //logger.debug("get param "+name+"||||"+valueStr);
 	}
 	
 	//获取支付宝的通知返回参数，可参考技术文档中页面跳转同步通知参数列表(以下仅供参考)//
 	//商户订单号
 
 	String out_trade_no = new String(request.getParameter("out_trade_no").getBytes("ISO-8859-1"),"UTF-8");
-
 	//支付宝交易号
 
 	String trade_no = new String(request.getParameter("trade_no").getBytes("ISO-8859-1"),"UTF-8");
 
 	//交易状态
 	String trade_status = new String(request.getParameter("trade_status").getBytes("ISO-8859-1"),"UTF-8");
-
 	//获取支付宝的通知返回参数，可参考技术文档中页面跳转同步通知参数列表(以上仅供参考)//
 
 	if(AlipayNotify.verify(params)){//验证成功
@@ -70,11 +72,16 @@
 			//2、开通了高级即时到账，从该笔交易成功时间算起，过了签约时的可退款时限（如：三个月以内可退款、一年以内可退款等）后。
 
             ServletContext context = request.getSession().getServletContext();
+
             ApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(context);
+
             ChannelNoticeService noticeService = (ChannelNoticeService)ctx.getBean("channelNoticeService");
+
             ServiceResult<String> serviceResult = noticeService.receiveAlipayNotice(out_trade_no);
             if(!serviceResult.isSuccess()){
+                logger.debug("alipay notify failed, order no [{}]",out_trade_no);
                 out.println("fail");
+                return;
             }
 
 		} else if (trade_status.equals("TRADE_SUCCESS")){
@@ -90,7 +97,9 @@
             ChannelNoticeService noticeService = (ChannelNoticeService)ctx.getBean("channelNoticeService");
             ServiceResult<String> serviceResult = noticeService.receiveAlipayNotice(out_trade_no);
             if(!serviceResult.isSuccess()){
+                logger.debug("alipay notify failed, order no [{}]",out_trade_no);
                 out.println("fail");
+                return;
             }
 
 		}
@@ -98,9 +107,10 @@
 		//——请根据您的业务逻辑来编写程序（以上代码仅作参考）——
 			
 		out.println("success");	//请不要修改或删除
-
+        logger.debug("alipay notify success, order no [{}]",out_trade_no);
 		//////////////////////////////////////////////////////////////////////////////////////////
 	}else{//验证失败
+        logger.debug("alipay notify failed, order no [{}], reason sign verify fail",out_trade_no);
 		out.println("fail");
 	}
 %>
