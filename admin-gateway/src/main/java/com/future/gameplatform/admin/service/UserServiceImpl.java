@@ -19,6 +19,8 @@ public class UserServiceImpl implements UserService {
     private PasswordHelper passwordHelper;
     @Autowired
     private RoleService roleService;
+    @Autowired
+    private OrgAuthHelper orgAuthHelper;
 
     /**
      * 创建用户
@@ -95,6 +97,11 @@ public class UserServiceImpl implements UserService {
             return Collections.EMPTY_SET;
         }
         return roleService.findPermissions(user.getRoleIds().toArray(new String[0]));
+    }
+
+    @Override
+    public boolean orgAuth(String shortcode, String key) {
+        return orgAuthHelper.doOrgAuth(shortcode, key);
     }
 
 }

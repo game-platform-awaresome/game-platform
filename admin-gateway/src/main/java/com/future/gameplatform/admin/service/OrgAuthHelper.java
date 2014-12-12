@@ -1,0 +1,60 @@
+package com.future.gameplatform.admin.service;
+
+import com.future.gameplatform.account.game.util.SignUtil;
+import com.future.gameplatform.admin.Constants;
+import com.future.gameplatform.common.service.AbstractHttpRPCService;
+import org.apache.http.HttpStatus;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
+/**
+ * Created by user on 2014/12/12.
+ */
+@Service
+public class OrgAuthHelper extends AbstractHttpRPCService {
+
+    private static final Logger logger = LoggerFactory.getLogger(OrgAuthHelper.class);
+    /**
+     * Constructor
+     *
+     * @param maxConnection allow max quantity of connection
+     */
+    protected OrgAuthHelper(int maxConnection) {
+        super(maxConnection);
+    }
+
+    public boolean doOrgAuth(String shortcode, String key) {
+
+        final String url = Constants.ORG_AUTH_URL+"?shortcode="+shortcode+"&key="+key;
+        String ret = execute(new Callback() {
+            @Override
+            public String doIt() {
+                HttpRPCResult result = invokeGet(
+                        url,
+                        HttpStatus.SC_OK);
+
+                if (result.getStatusCode() == HttpStatus.SC_OK) {
+                    return "000";
+                }
+                logger.error(
+                        "[RPC-doOrgAuth] failed! statusCode: {}; message: {}",
+                        result.getStatusCode(), result.getMessage());
+                return null;
+            }
+        });
+        if(ret.startsWith("000")){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    private interface Callback {
+        String doIt();
+    }
+
+    private String execute(Callback callback) {
+        return callback.doIt();
+    }
+}

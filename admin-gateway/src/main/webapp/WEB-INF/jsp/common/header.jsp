@@ -11,7 +11,6 @@
         <shiro:guest>
             <ul id="nonLoginBar" class="nav navbar-nav navbar-right navbar-sm hidden-sm hidden-xs">
                 <li><a id="login-panel" href="/login" rel="nofollow">登录</a></li>
-                <li><a id="create-account" href="/register111" class="btn btn-sm" rel="nofollow">注册账户</a></li>
             </ul>
         </shiro:guest>
         <shiro:authenticated>
@@ -22,27 +21,32 @@
         </shiro:authenticated>
     </div>
 </div>
-<div class="row">
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="navbar-header">
-            <a class="navbar-brand hidden-sm hidden-xs" href="/">凤凰支付</a>
-            <ul class="nav navbar-nav">
-                <li class="hidden-sm hidden-xs"><a href="/channel/defaultConfig">通道缺省配置</a></li>
-                <li class="hidden-sm hidden-xs"><a href="/channel/list">通道配置</a></li>
-                <li class="hidden-sm hidden-xs"><a href="/settle/list">结算中心</a></li>
-                <li class="dropdown hidden-md hidden-lg">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        凤凰支付<span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/channel/defaultConfig">通道缺省配置</a></li>
-                        <li><a href="/channel/list">通道配置</a></li>
-                        <li><a href="/settle/list">结算中心</a></li>
-                        <li class="divider"></li>
-                        <li><a href="/logout">退出</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
+<shiro:hasRole name="admin">
+    <div class="row">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand hidden-sm hidden-xs" href="/">凤凰支付</a>
+                <ul class="nav navbar-nav">
+                    <li class="hidden-sm hidden-xs"><a href="/channel/defaultConfig">通道缺省配置</a></li>
+                    <li class="hidden-sm hidden-xs"><a href="/channel/list">通道配置</a></li>
+                    <li class="hidden-sm hidden-xs"><a href="/settle/list">结算中心</a></li>
+                    <li class="hidden-sm hidden-xs"><a href="/register0">CP用户注册</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</shiro:hasRole>
+<shiro:hasRole name="cp">
+    <div class="row">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand hidden-sm hidden-xs" href="/">凤凰支付</a>
+                <ul class="nav navbar-nav">
+                    <li class="hidden-sm hidden-xs"><a href="/channel/view">通道配置查看</a></li>
+                    <li class="hidden-sm hidden-xs"><a href="/settle/cp/list">结算中心</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</shiro:hasRole>
+

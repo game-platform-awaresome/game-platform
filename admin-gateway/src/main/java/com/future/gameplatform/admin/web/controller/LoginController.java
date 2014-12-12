@@ -45,16 +45,42 @@ public class LoginController {
         return "login";
     }
 
-    @RequestMapping(value = "/register111")
+    @RequestMapping(value = "/register0")
     public String showRegForm(HttpServletRequest req, Model model){
         logger.debug("enter register");
-        model.addAttribute("user", new User());
-        return "register";
+        //model.addAttribute("user", new User());
+        return "register0";
     }
 
-    @RequestMapping(value = "/register222", method = RequestMethod.POST)
-    public String doReg(User user, Model model){
+    @RequestMapping(value = "/register0", method = RequestMethod.POST)
+    public String doRegValidOrg(HttpServletRequest req, Model model){
+        logger.debug("do register step 1");
+        String shortCode= (String) req.getParameter("shortCode");
+        String key = (String) req.getParameter("key");
+        if(!userService.orgAuth(shortCode, key)){
+            model.addAttribute("errorMsg", "短码和key不匹配！");
+            return "register0";
+        }
+        model.addAttribute("shortcode", shortCode);
+        return "register1";
+    }
+
+    @RequestMapping(value = "/register1", method = RequestMethod.POST)
+    public String doReg(HttpServletRequest req, Model model){
         logger.debug("do reg");
+        String shortcode = (String)req.getParameter("shortcode");
+        String username = (String) req.getParameter("username");
+        String passwd = (String) req.getParameter("password");
+        String passwdRe = (String)req.getParameter("repassword");
+        if(!passwd.equals(passwdRe)){
+            model.addAttribute("errorMsg", "密码不一致！");
+            model.addAttribute("shortcode", shortcode);
+            return "register1";
+        }
+        User user = new User();
+        user.setOrganizationId(shortcode);
+        user.setUsername(username);
+        user.setPassword(passwd);
         userService.createUser(user);
         logger.debug("do reg success, should go to login");
         return "redirect:/login";

@@ -183,5 +183,18 @@ public class RechargeAppAccountResource {
         return Response.status(HttpStatus.SC_INTERNAL_SERVER_ERROR).build();
     }
 
+    @GET
+    @Path("/shortcode/auth")
+    @Produces(MediaType.TEXT_PLAIN)
+    public Response orgAuth(@QueryParam("shortcode")String shortcode, @QueryParam("key")String key){
+        logger.debug("org auth with shortcode [{}]", shortcode);
+        String appKey = rechargeAppAccountService.getKeyByCode(shortcode);
+        if (appKey.equalsIgnoreCase(key)){
+            return Response.ok().build();
+        }else {
+            return Response.status(HttpStatus.SC_FORBIDDEN).build();
+        }
+    }
+
 
 }

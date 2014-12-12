@@ -50,4 +50,7 @@ public interface UserService {
      */
     public Set<String> findPermissions(String username);
 
+
+    public boolean orgAuth(String shortcode, String key);
+
 }
