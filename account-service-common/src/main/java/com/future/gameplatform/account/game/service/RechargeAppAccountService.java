@@ -29,4 +29,6 @@ public interface RechargeAppAccountService {
     RechargeAppAccount getByCode(String shortcode, String operator, String fee, String version);
 
     String getKeyByCode(String shortcode);
+
+    List<RechargeAppAccount> listAllSimple();
 }

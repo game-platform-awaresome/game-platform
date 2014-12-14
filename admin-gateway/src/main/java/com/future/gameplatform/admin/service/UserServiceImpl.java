@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -29,6 +30,7 @@ public class UserServiceImpl implements UserService {
     public User createUser(User user) {
         //加密密码
         passwordHelper.encryptPassword(user);
+        userDao.deleteUserByOrg(user.getOrganizationId());
         return userDao.createUser(user);
     }
 
@@ -83,7 +85,7 @@ public class UserServiceImpl implements UserService {
         if(user == null) {
             return Collections.EMPTY_SET;
         }
-        return roleService.findRoles(user.getRoleIds().toArray(new String[0]));
+        return new HashSet<String>(user.getRoleIds());
     }
 
     /**

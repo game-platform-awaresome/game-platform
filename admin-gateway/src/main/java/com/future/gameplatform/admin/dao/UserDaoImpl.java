@@ -32,6 +32,11 @@ public class UserDaoImpl extends BasicDaoImpl implements UserDao {
     }
 
     @Override
+    public void deleteUserByOrg(String shortcode) {
+        datastore.findAndDelete(datastore.find(User.class, "organizationId", shortcode));
+    }
+
+    @Override
     public User findOne(String userId) {
         return datastore.get(User.class, userId);
     }

@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <p>User: Zhang Kaitao
@@ -68,22 +70,25 @@ public class LoginController {
     @RequestMapping(value = "/register1", method = RequestMethod.POST)
     public String doReg(HttpServletRequest req, Model model){
         logger.debug("do reg");
-        String shortcode = (String)req.getParameter("shortcode");
+        String organizationId = (String)req.getParameter("organizationId");
         String username = (String) req.getParameter("username");
         String passwd = (String) req.getParameter("password");
         String passwdRe = (String)req.getParameter("repassword");
         if(!passwd.equals(passwdRe)){
             model.addAttribute("errorMsg", "密码不一致！");
-            model.addAttribute("shortcode", shortcode);
+            model.addAttribute("shortcode", organizationId);
             return "register1";
         }
         User user = new User();
-        user.setOrganizationId(shortcode);
+        user.setOrganizationId(organizationId);
         user.setUsername(username);
         user.setPassword(passwd);
+        List<String> roleIds = new ArrayList<String>();
+        roleIds.add("cp");
+        user.setRoleIds(roleIds);
         userService.createUser(user);
         logger.debug("do reg success, should go to login");
-        return "redirect:/login";
+        return "index";
     }
 
 

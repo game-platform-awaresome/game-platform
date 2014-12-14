@@ -123,6 +123,7 @@
             <value>
                 /static/** = anon
                 /jcaptcha* = anon
+                /register* = anon
                 /login = jCaptchaValidate,authc
                 /logout = logout
                 /authenticated = authc

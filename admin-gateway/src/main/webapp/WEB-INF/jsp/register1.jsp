@@ -5,10 +5,10 @@
     </div>
     <div class="col-sm-8 col-md-4 col-lg-3">
         <h1 style="text-align: center">
-            欢迎注册
+            请记住用户名/密码
         </h1>
         <form  role="form" method="post" action="/register1">
-            <input type="hidden" name="organizationId" value="<%= shortcode%>">
+            <input type="hidden" name="organizationId" value="${shortcode}">
             <div class="input-group form-group input-group-lg">
                 <span class="glyphicon glyphicon-user input-group-addon"></span>
                 <input type="text" name="username" class="form-control" placeholder="用户名">
@@ -25,7 +25,7 @@
                 <span class="input-group-addon"></span>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-block btn-primary">下一步</button>
+                <button type="submit" class="btn btn-block btn-primary">注册</button>
             </div>
         </form>
     </div>

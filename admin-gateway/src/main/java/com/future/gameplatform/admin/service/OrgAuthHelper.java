@@ -3,15 +3,18 @@ package com.future.gameplatform.admin.service;
 import com.future.gameplatform.account.game.util.SignUtil;
 import com.future.gameplatform.admin.Constants;
 import com.future.gameplatform.common.service.AbstractHttpRPCService;
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
 import org.apache.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import java.util.*;
+
 /**
  * Created by user on 2014/12/12.
  */
-@Service
 public class OrgAuthHelper extends AbstractHttpRPCService {
 
     private static final Logger logger = LoggerFactory.getLogger(OrgAuthHelper.class);
@@ -48,6 +51,73 @@ public class OrgAuthHelper extends AbstractHttpRPCService {
         }else {
             return false;
         }
+    }
+
+    public Map<String, String> doGetCpList() {
+        final String url = Constants.ORG_LIST_URL;
+        String ret = execute(new Callback() {
+            @Override
+            public String doIt() {
+                HttpRPCResult result = invokeGet(
+                        url,
+                        HttpStatus.SC_OK);
+
+                if (result.getStatusCode() == HttpStatus.SC_OK) {
+                    return new String(result.getPayload());
+                }
+                logger.error(
+                        "[RPC-doGetCpList] failed! statusCode: {}; message: {}",
+                        result.getStatusCode(), result.getMessage());
+                return null;
+            }
+        });
+        if(ret != null){
+            JSONArray jsonArray = JSONArray.fromObject(ret);
+            Map<String, String> oneEntry = new HashMap<String, String>();
+            for(int i=0; i<jsonArray.size(); i++){
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                oneEntry.put(jsonObject.getString("shortcode"), jsonObject.getString("cpName"));
+            }
+            return oneEntry;
+        }else {
+            return Collections.EMPTY_MAP;
+        }
+    }
+
+    public Map<String, String> doGetTemplateChannelList() {
+        final String url = Constants.TEMPLATE_CHANNEL_URL;
+        String ret = execute(new Callback() {
+            @Override
+            public String doIt() {
+                HttpRPCResult result = invokeGet(
+                        url,
+                        HttpStatus.SC_OK);
+
+                if (result.getStatusCode() == HttpStatus.SC_OK) {
+                    return new String(result.getPayload());
+                }
+                logger.error(
+                        "[RPC-doGetTemplateChannelList] failed! statusCode: {}; message: {}",
+                        result.getStatusCode(), result.getMessage());
+                return null;
+            }
+        });
+        if(ret != null){
+            JSONObject jsonObject = JSONObject.fromObject(ret);
+            Map<String, String> oneEntry = new HashMap<String, String>();
+            JSONArray jsonArray = jsonObject.getJSONArray("items");
+            for(int i=0; i<jsonArray.size(); i++){
+                JSONObject jsonEntry = jsonArray.getJSONObject(i);
+                oneEntry.put(jsonObject.getString("channel"), jsonObject.getString("channelName"));
+            }
+            return oneEntry;
+        }else {
+            return Collections.EMPTY_MAP;
+        }
+    }
+
+    public List<Map<String, String>> doGetSettle(String selectedShortcode, String selectedChannel, String beginDate, String endDate) {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 
     private interface Callback {

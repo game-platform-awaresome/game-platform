@@ -22,4 +22,6 @@ public interface RechargeAppAccountDao {
     String update(String appid, Map<String, Object> updateInfo);
 
     RechargeAppAccount getByShortcode(String shortcode);
+
+    List<RechargeAppAccount> listAllSimple();
 }

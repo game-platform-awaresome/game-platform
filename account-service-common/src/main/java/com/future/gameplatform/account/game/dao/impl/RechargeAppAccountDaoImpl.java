@@ -111,6 +111,32 @@ public class RechargeAppAccountDaoImpl extends BasicDaoImpl implements RechargeA
         }
     }
 
+    @Override
+    public List<RechargeAppAccount> listAllSimple() {
+        logger.debug("get account list all simple");
+        try{
+            DBObject fields = new BasicDBObject();
+            fields.put("_id", 1);
+            fields.put("shortcode", 1);
+            fields.put("cpName", 1);
+            DBCollection dbCollection = datastore.getCollection(RechargeAppAccount.class);
+            DBCursor cur =  dbCollection.find(new BasicDBObject("status","ok"), fields);
+            List<RechargeAppAccount> accountList = new ArrayList<RechargeAppAccount>();
+            while (cur.hasNext()) {
+                DBObject dbObject = cur.next();
+                RechargeAppAccount rechargeAppAccount = new RechargeAppAccount();
+                rechargeAppAccount.setId(getFieldValue(dbObject, "_id"));
+                rechargeAppAccount.setShortcode(getFieldValue(dbObject, "shortcode"));
+                rechargeAppAccount.setCpName(getFieldValue(dbObject, "cpName"));
+                accountList.add(rechargeAppAccount);
+            }
+            return accountList;
+        }catch (Exception e){
+            logger.error("get account list all simple", e);
+            return null;
+        }
+    }
+
     private RechargeAppAccount DBObject2Account(DBObject dbObject){
         if(dbObject == null){
             return null;

@@ -5,12 +5,12 @@
     </div>
     <div class="col-sm-8 col-md-4 col-lg-3">
         <h1 style="text-align: center">
-            欢迎注册
+            输入短码/KEY
         </h1>
         <form  role="form" method="post" action="/register0">
             <div class="input-group form-group input-group-lg">
                 <span class="glyphicon glyphicon-user input-group-addon"></span>
-                <input type="text" name="shortcode" class="form-control" placeholder="分配的CP短码">
+                <input type="text" name="shortCode" class="form-control" placeholder="分配的CP短码">
                 <span class="input-group-addon"></span>
             </div>
             <div class="input-group form-group input-group-lg">

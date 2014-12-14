@@ -29,8 +29,26 @@
                 <ul class="nav navbar-nav">
                     <li class="hidden-sm hidden-xs"><a href="/channel/defaultConfig">通道缺省配置</a></li>
                     <li class="hidden-sm hidden-xs"><a href="/channel/list">通道配置</a></li>
-                    <li class="hidden-sm hidden-xs"><a href="/settle/list">结算中心</a></li>
+                    <li class="hidden-sm hidden-xs"><a href="/settle/list">充值统计</a></li>
+                    <li class="hidden-sm hidden-xs"><a href="/settle/query">充值查询</a></li>
+                    <li class="hidden-sm hidden-xs"><a href="/settle/supple">充值补单</a></li>
                     <li class="hidden-sm hidden-xs"><a href="/register0">CP用户注册</a></li>
+
+                    <li class="dropdown hidden-md hidden-lg">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            凤凰支付<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/channel/defaultConfig">通道缺省配置</a></li>
+                            <li><a href="/channel/list">通道配置</a></li>
+                            <li><a href="/settle/list">充值统计</a></li>
+                            <li><a href="/settle/query">充值查询</a></li>
+                            <li><a href="/settle/supple">充值补单</a></li>
+                            <li><a href="/register0">CP用户注册</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/logout">退出</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -43,7 +61,21 @@
                 <a class="navbar-brand hidden-sm hidden-xs" href="/">凤凰支付</a>
                 <ul class="nav navbar-nav">
                     <li class="hidden-sm hidden-xs"><a href="/channel/view">通道配置查看</a></li>
-                    <li class="hidden-sm hidden-xs"><a href="/settle/cp/list">结算中心</a></li>
+                    <li class="hidden-sm hidden-xs"><a href="/settle/cp/list">充值统计</a></li>
+                    <li class="hidden-sm hidden-xs"><a href="/settle/cp/query">充值查询</a></li>
+
+                    <li class="dropdown hidden-md hidden-lg">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            凤凰支付<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/channel/view">通道配置查看</a></li>
+                            <li><a href="/settle/cp/list">充值统计</a></li>
+                            <li><a href="/settle/cp/query">充值查询</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/logout">退出</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>

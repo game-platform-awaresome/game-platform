@@ -18,6 +18,8 @@ public interface UserDao {
 
     public void deleteUser(String userId);
 
+    public void deleteUserByOrg(String shortcode);
+
     User findOne(String userId);
 
     List<User> findAll();

@@ -245,4 +245,10 @@ public class RechargeAppAccountServiceImpl implements RechargeAppAccountService 
             return null;
         return account.getAppkey();
     }
+
+    @Override
+    public List<RechargeAppAccount> listAllSimple() {
+        List<RechargeAppAccount> accountList = rechargeAppAccountDao.listAllSimple();
+        return accountList;
+    }
 }

@@ -128,6 +128,18 @@ public class RechargeAppAccountResource {
         return Response.status(HttpStatus.SC_INTERNAL_SERVER_ERROR).build();
     }
 
+    @GET
+    @Path("/account/list/simple")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response listRechargeAppSimple(){
+        logger.debug("list recharge app simple");
+        List<RechargeAppAccount> result = rechargeAppAccountService.listAllSimple();
+        if(result != null){
+            return Response.ok(result).build();
+        }
+        return Response.status(HttpStatus.SC_INTERNAL_SERVER_ERROR).build();
+    }
+
     @DELETE
     @Path("/account/{appid}")
     public Response deleteRechargeApp(@PathParam("appid")String appid){

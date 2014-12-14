@@ -7,7 +7,13 @@
         </div>
     </div>
 </div>
+
 <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
 <script src="http://apps.bdimg.com/libs/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<!--
+
+<script src="/static/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script src="/static/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+-->
 </body>
 </html>

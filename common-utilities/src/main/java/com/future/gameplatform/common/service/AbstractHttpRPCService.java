@@ -497,7 +497,9 @@ public abstract class AbstractHttpRPCService {
 		return composeURI("http", hostname, port, path);
 	}
 
-	/**
+
+
+    /**
 	 * Result of HTTP RPC service
 	 * 
 	 * @author Xinyu
