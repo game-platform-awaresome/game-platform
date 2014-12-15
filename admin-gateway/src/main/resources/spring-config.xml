@@ -52,8 +52,8 @@
         <property name="rechargeAppAccountDao" ref="rechargeAppAccountDao"/>
     </bean>
 
-    <bean id="orgAuthHelper"
-          class="com.future.gameplatform.admin.service.OrgAuthHelper"
+    <bean id="rechargeHelper"
+          class="com.future.gameplatform.admin.service.RechargeHelper"
           scope="singleton"
           lazy-init="false">
         <constructor-arg name="maxConnection" value="32"/>

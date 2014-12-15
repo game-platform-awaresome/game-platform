@@ -19,16 +19,16 @@ import java.util.Map;
 public class SettleServiceImpl implements SettleService {
 
     @Autowired
-    private OrgAuthHelper orgAuthHelper;
+    private RechargeHelper rechargeHelper;
 
     @Override
     public Map<String, String> getCPList() {
-        return orgAuthHelper.doGetCpList();
+        return rechargeHelper.doGetCpList();
     }
 
     @Override
     public Map<String, String> getTemplateChannelList() {
-        return orgAuthHelper.doGetTemplateChannelList();
+        return rechargeHelper.doGetTemplateChannelList();
     }
 
     @Override
@@ -43,6 +43,6 @@ public class SettleServiceImpl implements SettleService {
             nowDate.setTime(nowDate.getTime()-60*60*24*30*1000);
             beginDate = simpleDateFormat.format(nowDate);
         }
-        return orgAuthHelper.doGetSettle(selectedShortcode, selectedChannel, beginDate, endDate);
+        return rechargeHelper.doGetSettle(selectedShortcode, selectedChannel, beginDate, endDate);
     }
 }

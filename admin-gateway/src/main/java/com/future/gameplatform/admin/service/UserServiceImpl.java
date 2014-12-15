@@ -21,7 +21,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private RoleService roleService;
     @Autowired
-    private OrgAuthHelper orgAuthHelper;
+    private RechargeHelper rechargeHelper;
 
     /**
      * 创建用户
@@ -103,7 +103,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean orgAuth(String shortcode, String key) {
-        return orgAuthHelper.doOrgAuth(shortcode, key);
+        return rechargeHelper.doOrgAuth(shortcode, key);
     }
 
 }

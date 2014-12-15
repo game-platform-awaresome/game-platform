@@ -15,15 +15,15 @@ import java.util.*;
 /**
  * Created by user on 2014/12/12.
  */
-public class OrgAuthHelper extends AbstractHttpRPCService {
+public class RechargeHelper extends AbstractHttpRPCService {
 
-    private static final Logger logger = LoggerFactory.getLogger(OrgAuthHelper.class);
+    private static final Logger logger = LoggerFactory.getLogger(RechargeHelper.class);
     /**
      * Constructor
      *
      * @param maxConnection allow max quantity of connection
      */
-    protected OrgAuthHelper(int maxConnection) {
+    protected RechargeHelper(int maxConnection) {
         super(maxConnection);
     }
 
@@ -117,6 +117,10 @@ public class OrgAuthHelper extends AbstractHttpRPCService {
     }
 
     public List<Map<String, String>> doGetSettle(String selectedShortcode, String selectedChannel, String beginDate, String endDate) {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public List<Map<String, String>> doQueryOrder(String shortcode, String mobile, String orderno, String id, String begindate, String enddate) {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
 
