@@ -1,5 +1,7 @@
 package com.future.gameplatform.admin.web.controller;
 
+import com.future.gameplatform.admin.Constants;
+import com.future.gameplatform.admin.entity.User;
 import com.future.gameplatform.admin.service.RechargeQueryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,6 +11,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * Created with IntelliJ IDEA.
@@ -28,12 +32,59 @@ public class RechargeQueryController {
 
     @RequestMapping(value = "/order")
     public String queryRecharge(HttpServletRequest httpServletRequest, Model model){
-        return null;
+        logger.debug("admin query order info");
+        String mobile = httpServletRequest.getParameter("mobile");
+        String orderno = httpServletRequest.getParameter("orderno");
+        String id = httpServletRequest.getParameter("id");
+        String begindate = httpServletRequest.getParameter("begindate");
+        String enddate = httpServletRequest.getParameter("enddate");
+        String op = httpServletRequest.getParameter("op");
+        if(op != null && op.equals("q")){
+            model.addAttribute("mobile", mobile);
+            model.addAttribute("orderno", orderno);
+            model.addAttribute("id", id);
+            model.addAttribute("begindate", begindate);
+            model.addAttribute("enddate", enddate);
+            model.addAttribute("orders", rechargeQueryService.queryOrder(null, mobile, orderno, id, begindate, enddate));
+        }else {
+            Date nowDate = new Date();
+            long myTime=(nowDate.getTime()/1000)-60*60*24*30;
+
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("YYYY-MM-DD");
+            model.addAttribute("enddate", simpleDateFormat.format(nowDate));
+            nowDate.setTime(myTime);
+            model.addAttribute("begindate", simpleDateFormat.format(nowDate));
+        }
+        return "orderquery/adminorder";
     }
 
     @RequestMapping(value = "/cp/order")
     public String queryCpRecharge(HttpServletRequest httpServletRequest, Model model){
-        return null;
+        logger.debug("cp user query order info");
+        User user = (User)httpServletRequest.getSession().getAttribute(Constants.CURRENT_USER);
+        String mobile = httpServletRequest.getParameter("mobile");
+        String orderno = httpServletRequest.getParameter("orderno");
+        String id = httpServletRequest.getParameter("id");
+        String begindate = httpServletRequest.getParameter("begindate");
+        String enddate = httpServletRequest.getParameter("enddate");
+        String op = httpServletRequest.getParameter("op");
+        if(op != null && op.equals("q")){
+            model.addAttribute("mobile", mobile);
+            model.addAttribute("orderno", orderno);
+            model.addAttribute("id", id);
+            model.addAttribute("begindate", begindate);
+            model.addAttribute("enddate", enddate);
+            model.addAttribute("orders", rechargeQueryService.queryOrder(user.getOrganizationId(), mobile, orderno, id, begindate, enddate));
+        }else {
+            Date nowDate = new Date();
+            long myTime=(nowDate.getTime()/1000)-60*60*24*30;
+
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("YYYY-MM-DD");
+            model.addAttribute("enddate", simpleDateFormat.format(nowDate));
+            nowDate.setTime(myTime);
+            model.addAttribute("begindate", simpleDateFormat.format(nowDate));
+        }
+        return "orderquery/adminorder";
     }
 
 }

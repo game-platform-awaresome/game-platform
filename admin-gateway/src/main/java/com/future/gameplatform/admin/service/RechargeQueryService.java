@@ -1,5 +1,8 @@
 package com.future.gameplatform.admin.service;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: JohnKee
@@ -8,4 +11,5 @@ package com.future.gameplatform.admin.service;
  * To change this template use File | Settings | File Templates.
  */
 public interface RechargeQueryService {
+    List<Map<String, String>> queryOrder(String shortcode, String mobile, String orderno, String id, String begindate, String enddate);
 }
