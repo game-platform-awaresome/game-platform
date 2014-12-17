@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -40,6 +41,10 @@ public class RechargeQueryController {
         String enddate = httpServletRequest.getParameter("enddate");
         String op = httpServletRequest.getParameter("op");
         if(op != null && op.equals("q")){
+            if(!checkDateRange(begindate, enddate)){
+                model.addAttribute("errMsg","日期格式不对或不是一个有效的时间段！");
+                return "orderquery/adminorder";
+            }
             model.addAttribute("mobile", mobile);
             model.addAttribute("orderno", orderno);
             model.addAttribute("id", id);
@@ -50,7 +55,7 @@ public class RechargeQueryController {
             Date nowDate = new Date();
             long myTime=(nowDate.getTime()/1000)-60*60*24*30;
 
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("YYYY-MM-DD");
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
             model.addAttribute("enddate", simpleDateFormat.format(nowDate));
             nowDate.setTime(myTime);
             model.addAttribute("begindate", simpleDateFormat.format(nowDate));
@@ -69,6 +74,10 @@ public class RechargeQueryController {
         String enddate = httpServletRequest.getParameter("enddate");
         String op = httpServletRequest.getParameter("op");
         if(op != null && op.equals("q")){
+            if(!checkDateRange(begindate, enddate)){
+                model.addAttribute("errMsg","日期格式不对或不是一个有效的时间段！");
+                return "orderquery/adminorder";
+            }
             model.addAttribute("mobile", mobile);
             model.addAttribute("orderno", orderno);
             model.addAttribute("id", id);
@@ -79,12 +88,28 @@ public class RechargeQueryController {
             Date nowDate = new Date();
             long myTime=(nowDate.getTime()/1000)-60*60*24*30;
 
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("YYYY-MM-DD");
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
             model.addAttribute("enddate", simpleDateFormat.format(nowDate));
             nowDate.setTime(myTime);
             model.addAttribute("begindate", simpleDateFormat.format(nowDate));
         }
         return "orderquery/adminorder";
+    }
+
+    private boolean checkDateRange(String begindate, String enddate) {
+        if(begindate == null || enddate == null)
+            return false;
+        try{
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            simpleDateFormat.parse(begindate);
+            simpleDateFormat.parse(enddate);
+        } catch (ParseException e) {
+            return false;
+        }
+        if(begindate.compareTo(enddate) > -1) {
+            return false;
+        }
+        return true;
     }
 
 }

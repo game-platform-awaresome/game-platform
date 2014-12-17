@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -42,7 +43,10 @@ public class SettleController {
             String selectedChannel = httpServletRequest.getParameter("channel");
             String beginDate = httpServletRequest.getParameter("beginDate");
             String endDate = httpServletRequest.getParameter("endDate");
-
+            if(!checkDateRange(beginDate, endDate)){
+                model.addAttribute("errMsg","日期格式不对或不是一个有效的时间段！");
+                return "settle/list";
+            }
             model.addAttribute("settles", settleService.getSettle(selectedCp, selectedChannel, beginDate, endDate));
 
             model.addAttribute("selectedCp", selectedCp);
@@ -54,7 +58,7 @@ public class SettleController {
 
             long myTime=(nowDate.getTime()/1000)-60*60*24*30;
 
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("YYYY-MM-DD");
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
             String selectedCp = "all";
             String selectedChannel = "all";
             String beginDate = simpleDateFormat.format(nowDate);
@@ -81,17 +85,23 @@ public class SettleController {
             String beginDate = httpServletRequest.getParameter("beginDate");
             String endDate = httpServletRequest.getParameter("endDate");
 
+            if(!checkDateRange(beginDate, endDate)){
+                model.addAttribute("errMsg","日期格式不对或不是一个有效的时间段！");
+                return "settle/cpList";
+            }
+
             model.addAttribute("settles", settleService.getSettle(user.getOrganizationId(), selectedChannel, beginDate, endDate));
 
             model.addAttribute("selectedChannel", selectedChannel);
             model.addAttribute("beginDate", beginDate);
             model.addAttribute("endDate", endDate);
+
         }else {
             Date nowDate = new Date();
 
             long myTime=(nowDate.getTime()/1000)-60*60*24*30;
 
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("YYYY-MM-DD");
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
             String selectedChannel = "all";
             String beginDate = simpleDateFormat.format(nowDate);
@@ -103,6 +113,23 @@ public class SettleController {
             model.addAttribute("endDate", endDate);
         }
         return "settle/cpList";
+    }
+
+    private boolean checkDateRange(String begindate, String enddate) {
+        if(begindate == null || enddate == null)
+            return false;
+        try{
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            simpleDateFormat.parse(begindate);
+            simpleDateFormat.parse(enddate);
+
+        } catch (ParseException e) {
+            return false;
+        }
+        if(begindate.compareTo(enddate) > -1) {
+            return false;
+        }
+        return true;
     }
 
 }

@@ -2,6 +2,8 @@ package com.future.gameplatform.recharge.common.dao;
 
 import com.future.gameplatform.recharge.common.entity.SmsRecharge;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: JohnKee
@@ -16,4 +18,8 @@ public interface SmsRechargeDao {
     SmsRecharge getByCode(String shortCode, String orderno);
 
     SmsRecharge getById(String mchNo);
+
+    List<SmsRecharge> listForQuery(String shortcode, String mobile, String orderno, String id, String begindate, String enddate);
+
+    List<SmsRecharge> listForStatistic(String selectedShortcode, String selectedChannel, String beginDate, String endDate);
 }

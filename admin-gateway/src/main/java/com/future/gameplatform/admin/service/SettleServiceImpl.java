@@ -43,6 +43,7 @@ public class SettleServiceImpl implements SettleService {
             nowDate.setTime(nowDate.getTime()-60*60*24*30*1000);
             beginDate = simpleDateFormat.format(nowDate);
         }
+
         return rechargeHelper.doGetSettle(selectedShortcode, selectedChannel, beginDate, endDate);
     }
 }

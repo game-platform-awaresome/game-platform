@@ -117,7 +117,7 @@ public class RechargeHelper extends AbstractHttpRPCService {
     }
 
     public List<Map<String, String>> doGetSettle(String selectedShortcode, String selectedChannel, String beginDate, String endDate) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return null;
     }
 
     public List<Map<String, String>> doQueryOrder(String shortcode, String mobile, String orderno, String id, String begindate, String enddate) {
