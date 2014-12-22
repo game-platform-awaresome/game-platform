@@ -1,7 +1,9 @@
 package com.future.gameplatform.admin.service;
 
+import com.future.gameplatform.common.service.RechargeRemoteInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -20,6 +22,8 @@ public class SettleServiceImpl implements SettleService {
 
     @Autowired
     private RechargeHelper rechargeHelper;
+    @Autowired
+    private RechargeRemoteInterface rechargeRemoteInterface;
 
     @Override
     public Map<String, String> getCPList() {
@@ -44,6 +48,15 @@ public class SettleServiceImpl implements SettleService {
             beginDate = simpleDateFormat.format(nowDate);
         }
 
-        return rechargeHelper.doGetSettle(selectedShortcode, selectedChannel, beginDate, endDate);
+        return rechargeRemoteInterface.statisticRecharge(selectedShortcode, selectedChannel, beginDate, endDate);
     }
+
+    @Override
+    public String suppleOrder(String id) {
+        if(StringUtils.isEmpty(id)){
+            return "失败，参数无效！";
+        }
+        return rechargeRemoteInterface.suppleOrder(id);
+    }
+
 }

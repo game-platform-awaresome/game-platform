@@ -4,6 +4,8 @@ import com.future.gameplatform.account.game.UserAccountString;
 import com.future.gameplatform.account.game.entity.AccountItem;
 import com.future.gameplatform.account.game.entity.RechargeAppAccount;
 import com.future.gameplatform.account.game.service.RechargeAppAccountService;
+import com.future.gameplatform.admin.Constants;
+import com.future.gameplatform.admin.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -197,6 +199,16 @@ public class ChannelController {
         logger.debug("change default config channel [{}],sortcode [{}],result ok", channel, vchange);
         model.addAttribute("account", rechargeAppAccount);
         return "channel/showdetail";
+    }
+
+    @RequestMapping(value = "/view")
+    public String cpViewChannel(HttpServletRequest httpServletRequest, Model model){
+        logger.debug("cp view channel info");
+        User user = (User)httpServletRequest.getSession().getAttribute(Constants.CURRENT_USER);
+        RechargeAppAccount rechargeAppAccount = rechargeAppAccountService.getByCode(user.getOrganizationId(), "alipay", "1", "1.001.001");
+        rechargeAppAccount = rechargeAppAccountService.getById(rechargeAppAccount.getId());
+        model.addAttribute("account", rechargeAppAccount);
+        return "channel/viewdetail";
     }
 
 }

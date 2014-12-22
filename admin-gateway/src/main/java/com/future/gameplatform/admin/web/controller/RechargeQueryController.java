@@ -76,7 +76,7 @@ public class RechargeQueryController {
         if(op != null && op.equals("q")){
             if(!checkDateRange(begindate, enddate)){
                 model.addAttribute("errMsg","日期格式不对或不是一个有效的时间段！");
-                return "orderquery/adminorder";
+                return "orderquery/cporder";
             }
             model.addAttribute("mobile", mobile);
             model.addAttribute("orderno", orderno);
@@ -93,7 +93,7 @@ public class RechargeQueryController {
             nowDate.setTime(myTime);
             model.addAttribute("begindate", simpleDateFormat.format(nowDate));
         }
-        return "orderquery/adminorder";
+        return "orderquery/cporder";
     }
 
     private boolean checkDateRange(String begindate, String enddate) {

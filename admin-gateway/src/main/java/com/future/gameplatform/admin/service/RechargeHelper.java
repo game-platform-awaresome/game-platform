@@ -108,7 +108,7 @@ public class RechargeHelper extends AbstractHttpRPCService {
             JSONArray jsonArray = jsonObject.getJSONArray("items");
             for(int i=0; i<jsonArray.size(); i++){
                 JSONObject jsonEntry = jsonArray.getJSONObject(i);
-                oneEntry.put(jsonObject.getString("channel"), jsonObject.getString("channelName"));
+                oneEntry.put(jsonEntry.getString("channel"), jsonEntry.getString("channelName"));
             }
             return oneEntry;
         }else {
@@ -116,13 +116,6 @@ public class RechargeHelper extends AbstractHttpRPCService {
         }
     }
 
-    public List<Map<String, String>> doGetSettle(String selectedShortcode, String selectedChannel, String beginDate, String endDate) {
-        return null;
-    }
-
-    public List<Map<String, String>> doQueryOrder(String shortcode, String mobile, String orderno, String id, String begindate, String enddate) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
-    }
 
     private interface Callback {
         String doIt();

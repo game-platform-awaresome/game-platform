@@ -47,6 +47,10 @@ public class SettleController {
                 model.addAttribute("errMsg","日期格式不对或不是一个有效的时间段！");
                 return "settle/list";
             }
+            if(selectedCp.equals("all_multi") && selectedChannel.equals("all_multi"))  {
+                model.addAttribute("errMsg", "不能同时分CP和渠道统计！") ;
+                return "settle/list";
+            }
             model.addAttribute("settles", settleService.getSettle(selectedCp, selectedChannel, beginDate, endDate));
 
             model.addAttribute("selectedCp", selectedCp);
@@ -59,11 +63,11 @@ public class SettleController {
             long myTime=(nowDate.getTime()/1000)-60*60*24*30;
 
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-            String selectedCp = "all";
-            String selectedChannel = "all";
-            String beginDate = simpleDateFormat.format(nowDate);
-            nowDate.setTime(myTime*1000);
+            String selectedCp = "all_multi";
+            String selectedChannel = "all_single";
             String endDate = simpleDateFormat.format(nowDate);
+            nowDate.setTime(myTime*1000);
+            String beginDate = simpleDateFormat.format(nowDate);
             model.addAttribute("selectedCp", selectedCp);
             model.addAttribute("selectedChannel", selectedChannel);
             model.addAttribute("beginDate", beginDate);
@@ -103,16 +107,25 @@ public class SettleController {
 
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
-            String selectedChannel = "all";
-            String beginDate = simpleDateFormat.format(nowDate);
-            nowDate.setTime(myTime*1000);
+            String selectedChannel = "all_multi";
             String endDate = simpleDateFormat.format(nowDate);
+            nowDate.setTime(myTime*1000);
+            String beginDate = simpleDateFormat.format(nowDate);
 
             model.addAttribute("selectedChannel", selectedChannel);
             model.addAttribute("beginDate", beginDate);
             model.addAttribute("endDate", endDate);
         }
         return "settle/cpList";
+    }
+
+    @RequestMapping(value = "/supple")
+    public String orderSupple(HttpServletRequest request, Model model){
+        logger.debug("order supple");
+        String id = request.getParameter("id");
+        String msg = settleService.suppleOrder(id);
+        model.addAttribute("msg", msg);
+        return "settle/supple";
     }
 
     private boolean checkDateRange(String begindate, String enddate) {

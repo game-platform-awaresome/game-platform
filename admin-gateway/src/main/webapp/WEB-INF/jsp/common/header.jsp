@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include  file="head.jsp"%>
 <div class="row">
     <div class="col-sm-3 col-md-6 col-lg-8">
@@ -30,7 +31,7 @@
                     <li class="hidden-sm hidden-xs"><a href="/channel/defaultConfig">通道缺省配置</a></li>
                     <li class="hidden-sm hidden-xs"><a href="/channel/list">通道配置</a></li>
                     <li class="hidden-sm hidden-xs"><a href="/settle/list">充值统计</a></li>
-                    <li class="hidden-sm hidden-xs"><a href="/settle/query">充值查询</a></li>
+                    <li class="hidden-sm hidden-xs"><a href="/recharge/query/order">充值查询</a></li>
                     <li class="hidden-sm hidden-xs"><a href="/settle/supple">充值补单</a></li>
                     <li class="hidden-sm hidden-xs"><a href="/register0">CP用户注册</a></li>
 
@@ -42,7 +43,7 @@
                             <li><a href="/channel/defaultConfig">通道缺省配置</a></li>
                             <li><a href="/channel/list">通道配置</a></li>
                             <li><a href="/settle/list">充值统计</a></li>
-                            <li><a href="/settle/query">充值查询</a></li>
+                            <li><a href="/recharge/query/order">充值查询</a></li>
                             <li><a href="/settle/supple">充值补单</a></li>
                             <li><a href="/register0">CP用户注册</a></li>
                             <li class="divider"></li>
@@ -62,7 +63,7 @@
                 <ul class="nav navbar-nav">
                     <li class="hidden-sm hidden-xs"><a href="/channel/view">通道配置查看</a></li>
                     <li class="hidden-sm hidden-xs"><a href="/settle/cp/list">充值统计</a></li>
-                    <li class="hidden-sm hidden-xs"><a href="/settle/cp/query">充值查询</a></li>
+                    <li class="hidden-sm hidden-xs"><a href="/recharge/query/cp/order">充值查询</a></li>
 
                     <li class="dropdown hidden-md hidden-lg">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -71,7 +72,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="/channel/view">通道配置查看</a></li>
                             <li><a href="/settle/cp/list">充值统计</a></li>
-                            <li><a href="/settle/cp/query">充值查询</a></li>
+                            <li><a href="/recharge/query/cp/order">充值查询</a></li>
                             <li class="divider"></li>
                             <li><a href="/logout">退出</a></li>
                         </ul>

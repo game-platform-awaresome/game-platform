@@ -114,6 +114,16 @@
         <property name="noticeCpHelper" ref="noticeCpHelper"/>
 	</bean>
 
+    <bean id="remoteService" class="com.future.gameplatform.recharge.common.service.impl.RechargeRemoteServiceImpl">
+        <property name="smsRechargeDao" ref="smsRechargeDao"/>
+        <property name="noticeCpHelper" ref="noticeCpHelper"/>
+    </bean>
+
+    <bean name="/0/api/mobilerecharge/remoteService" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+        <property name="service" ref="remoteService"/>
+        <property name="serviceInterface" value="com.future.gameplatform.common.service.RechargeRemoteInterface"/>
+    </bean>
+
     <bean id="smsRechargeDao"
           class="com.future.gameplatform.recharge.common.dao.impl.SmsRechargeDaoImpl"
           scope="singleton"

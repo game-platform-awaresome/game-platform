@@ -17,4 +17,6 @@ public interface SettleService {
     Map<String, String> getTemplateChannelList();
 
     List<Map<String, String>> getSettle(String selectedShortcode, String selectedChannel, String beginDate, String endDate);
+
+    String suppleOrder(String id);
 }

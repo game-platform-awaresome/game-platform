@@ -16,4 +16,5 @@ public interface RechargeRemoteInterface {
 
     public List<Map<String, String>> queryRecharge(String shortcode, String mobile, String orderno, String id, String begindate, String enddate);
 
+    public String suppleOrder(String id);
 }

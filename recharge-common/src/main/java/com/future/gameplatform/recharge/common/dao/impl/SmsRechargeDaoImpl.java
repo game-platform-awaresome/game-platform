@@ -3,6 +3,7 @@ package com.future.gameplatform.recharge.common.dao.impl;
 import com.future.gameplatform.recharge.common.dao.SmsRechargeDao;
 import com.future.gameplatform.recharge.common.entity.SmsRecharge;
 import com.google.code.morphia.query.Query;
+import org.springframework.util.StringUtils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -50,16 +51,16 @@ public class SmsRechargeDaoImpl extends BasicDaoImpl implements SmsRechargeDao {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        if(shortcode != null && !shortcode.equals("all")){
+        if(StringUtils.hasText(shortcode)){
             query.filter("shortcode", shortcode);
         }
-        if(mobile != null && !mobile.equals("all")){
+        if(StringUtils.hasText(mobile)){
             query.filter("mobile", mobile);
         }
-        if(orderno != null && !orderno.equals("all")){
+        if(StringUtils.hasText(orderno)){
             query.filter("orderno", orderno);
         }
-        if(id != null && !id.equals("all")){
+        if(StringUtils.hasText(id)){
             query.filter("_id", id);
         }
         return query.asList();
@@ -74,12 +75,12 @@ public class SmsRechargeDaoImpl extends BasicDaoImpl implements SmsRechargeDao {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        if(selectedShortcode != null && !selectedShortcode.equals("all")){
+        if(selectedShortcode != null && !selectedShortcode.startsWith("all_")){
             query.filter("shortcode", selectedShortcode);
         }
-        if(selectedChannel != null && !selectedChannel.equals("all")){
+        if(selectedChannel != null && !selectedChannel.startsWith("all_")){
             query.filter("channel", selectedChannel);
         }
-        return query.asList();  //To change body of implemented methods use File | Settings | File Templates.
+        return query.asList();
     }
 }
