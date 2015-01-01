@@ -38,7 +38,7 @@ public class SettleServiceImpl implements SettleService {
     @Override
     public List<Map<String, String>> getSettle(String selectedShortcode, String selectedChannel, String beginDate, String endDate) {
         Date nowDate = new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("YYYY-MM-DD");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         if(endDate == null){
             endDate = simpleDateFormat.format(nowDate);
         }

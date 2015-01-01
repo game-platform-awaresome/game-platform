@@ -3,48 +3,81 @@
 <%@include file="../common/header.jsp"%>
 
 <h4>计费统计信息查询</h4>
+<c:if test="${not empty errMsg}">
+<div class="alert alert-danger">
+    <a href="#" class="close" data-dismiss="alert">
+        &times;
+    </a>
+    <strong>错误！</strong>${errMsg}
+</div>
+</c:if>
 <div class="row">
-
     <div class="col-sm-8 col-md-4 col-lg-3">
-    <form  role="form" action="/settle/list">
-        <input value="q" type="hidden" name="op">
-        <div class="input-group form-group">
-            <span class="input-group-addon">CP名称</span>
-            <select class="form-control" name="cp" >
-                <option value="all_multi" <c:if test="${selectedCp eq 'all_multi'}"> selected="selected" </c:if> >按CP统计所有</option>
-                <c:forEach items="${cps}" var="cpEntry">
-                    <option value="${cpEntry.key}" <c:if test="${selectedChannel eq cpEntry.key}"> selected="selected" </c:if>>${cpEntry.value}</option>
-                </c:forEach>
-            </select>
-        </div>
-        <div class="input-group form-group">
-            <span class="input-group-addon">通道</span>
-            <select class="form-control" name="channel" >
-                <option value="all_multi" <c:if test="${selectedChannel eq 'all_multi'}"> selected="selected" </c:if> >按通道统计所有</option>
-                <c:forEach items="${channels}" var="channelEntry">
-                    <option value="${channelEntry.key}" <c:if test="${selectedChannel eq channelEntry.key}"> selected="selected" </c:if>>${channelEntry.value}</option>
-                </c:forEach>
-            </select>
-        </div>
-        <div class="input-group form-group">
-            <span class="input-group-addon">开始时间</span>
-            <input type="text" name="beginDate" class="form-control" placeholder="开始时间"  value="${beginDate}">
-        </div>
-        <div class="input-group form-group">
-            <span class="input-group-addon">结束时间</span>
-            <input type="text" name="endDate" class="form-control" placeholder="结束时间" value="${endDate}">
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-block btn-primary">查询</button>
-        </div>
-    </form>
+        <form  role="form" action="/settle/list">
+            <input value="q" type="hidden" name="op">
+            <div class="input-group form-group">
+                <span class="input-group-addon">CP名称</span>
+                <select class="form-control" name="cp" >
+                    <c:if test="${selectedCp eq 'all_multi'}">
+                        <option value="all_multi"  selected="selected">按CP统计所有</option>
+                    </c:if>
+                    <c:if test="${selectedCp ne 'all_multi'}">
+                        <option value="all_multi">按CP统计所有</option>
+                    </c:if>
+                    <c:forEach items="${cps}" var="cpEntry">
+                        <c:if test="${selectedCp eq cpEntry.key}">
+                            <option value="${cpEntry.key}" selected="selected">${cpEntry.value}</option>
+                        </c:if>
+                        <c:if test="${selectedCp ne cpEntry.key}">
+                            <option value="${cpEntry.key}">${cpEntry.value}</option>
+                        </c:if>
+                    </c:forEach>
+                </select>
+            </div>
+            <div class="input-group form-group">
+                <span class="input-group-addon">通道</span>
+                <select class="form-control" name="channel" >
+                    <c:if test="${selectedChannel eq 'all_multi'}">
+                        <option value="all_multi"  selected="selected">按通道统计所有</option>
+                    </c:if>
+                    <c:if test="${selectedChannel ne 'all_multi'}">
+                        <option value="all_multi">按通道统计所有</option>
+                    </c:if>
+                    <c:forEach items="${channels}" var="channelEntry">
+                        <c:if test="${selectedChannel eq channelEntry.key}">
+                            <option value="${channelEntry.key}" selected="selected">${channelEntry.value}</option>
+                        </c:if>
+                        <c:if test="${selectedChannel ne channelEntry.key}">
+                            <option value="${channelEntry.key}">${channelEntry.value}</option>
+                        </c:if>
+                    </c:forEach>
+                </select>
+            </div>
+            <div class="input-group form-group">
+                <span class="input-group-addon">开始时间</span>
+                <input type="text" name="beginDate" class="form-control" placeholder="开始时间"  value="${beginDate}">
+            </div>
+            <div class="input-group form-group">
+                <span class="input-group-addon">结束时间</span>
+                <input type="text" name="endDate" class="form-control" placeholder="结束时间" value="${endDate}">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-block btn-primary">查询</button>
+            </div>
+        </form>
     </div>
 
     <div class="col-sm-4 col-md-8 col-lg-9">
     </div>
 </div>
-<c:if test="${not empty op}">
 
+<c:if test="${empty settles and not empty op}">
+    <div class="alert alert-danger">
+    <h4>结果为空</h4>
+    </div>
+</c:if>
+
+<c:if test="${not empty settles}">
     <div class="table-responsive">
         <table class="table">
             <thead>
@@ -87,4 +120,5 @@
         </table>
     </div>
 </c:if>
+
 <%@include file="../common/footer.jsp"%>

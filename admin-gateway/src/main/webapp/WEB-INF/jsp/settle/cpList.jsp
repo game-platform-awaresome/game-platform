@@ -11,9 +11,19 @@
         <div class="input-group form-group">
             <span class="input-group-addon">通道</span>
             <select class="form-control" name="channel" >
-                <option value="all_multi" <c:if test="${selectedChannel eq 'all_multi'}"> selected="selected" </c:if> >按通道统计所有</option>
+                <c:if test="${selectedChannel eq 'all_multi'}">
+                    <option value="all_multi"  selected="selected">按通道统计所有</option>
+                </c:if>
+                <c:if test="${selectedChannel ne 'all_multi'}">
+                    <option value="all_multi">按通道统计所有</option>
+                </c:if>
                 <c:forEach items="${channels}" var="channelEntry">
-                    <option value="${channelEntry.key}" <c:if test="${selectedChannel eq channelEntry.key}"> selected="selected" </c:if>>${channelEntry.value}</option>
+                    <c:if test="${selectedChannel eq channelEntry.key}">
+                        <option value="${channelEntry.key}" selected="selected">${channelEntry.value}</option>
+                    </c:if>
+                    <c:if test="${selectedChannel ne channelEntry.key}">
+                        <option value="${channelEntry.key}">${channelEntry.value}</option>
+                    </c:if>
                 </c:forEach>
             </select>
         </div>
@@ -34,7 +44,14 @@
         <div class="col-sm-4 col-md-8 col-lg-9">
         </div>
 </div>
-<c:if test="${not empty op}">
+
+<c:if test="${empty settles and not empty op}">
+    <div class="alert alert-danger">
+        <h4>结果为空</h4>
+    </div>
+</c:if>
+
+<c:if test="${not empty settles}">
 
 <div class="table-responsive">
     <table class="table">

@@ -28,7 +28,7 @@ public class RechargeQueryServiceImpl implements RechargeQueryService {
     @Override
     public List<Map<String, String>> queryOrder(String shortcode, String mobile, String orderno, String id, String begindate, String enddate) {
         Date nowDate = new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("YYYY-MM-DD");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         if(enddate == null){
             enddate = simpleDateFormat.format(nowDate);
         }

@@ -203,8 +203,9 @@ public class RechargeRemoteServiceImpl implements RechargeRemoteInterface {
             SmsRecharge smsRecharge = srIt.next();
             Map<String, String> map = new HashMap<String, String>();
             map.put("shortcode", smsRecharge.getShortcode());
-            map.put("channel", smsRecharge.getSmsChannel());
+            map.put("channel", smsRecharge.getChannel());
             map.put("orderno", smsRecharge.getOrderno());
+            map.put("id", smsRecharge.getId());
             map.put("createdDate", simpleDateFormat.format(smsRecharge.getCreatedDate()));
             map.put("fee", smsRecharge.getFee());
             map.put("mobile", smsRecharge.getMobile());
@@ -220,7 +221,7 @@ public class RechargeRemoteServiceImpl implements RechargeRemoteInterface {
         if(smsRecharge == null){
             return "失败，流水号不存在有效订单！";
         }
-        if(smsRecharge.getState()<5){
+        if(smsRecharge.getState()<4){
             return "失败，计费失败的订单不允许补单！" ;
         }
         ServiceResult<String> noticeCpResult = noticeCpHelper.noticeCp(smsRecharge.getShortcode(),smsRecharge.getOrderno(),id,smsRecharge.getFee());

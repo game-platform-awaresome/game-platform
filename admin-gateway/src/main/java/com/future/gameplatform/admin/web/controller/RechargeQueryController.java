@@ -50,6 +50,7 @@ public class RechargeQueryController {
             model.addAttribute("id", id);
             model.addAttribute("begindate", begindate);
             model.addAttribute("enddate", enddate);
+            model.addAttribute("op", op);
             model.addAttribute("orders", rechargeQueryService.queryOrder(null, mobile, orderno, id, begindate, enddate));
         }else {
             Date nowDate = new Date();
@@ -57,7 +58,7 @@ public class RechargeQueryController {
 
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
             model.addAttribute("enddate", simpleDateFormat.format(nowDate));
-            nowDate.setTime(myTime);
+            nowDate.setTime(myTime * 1000);
             model.addAttribute("begindate", simpleDateFormat.format(nowDate));
         }
         return "orderquery/adminorder";
@@ -83,6 +84,7 @@ public class RechargeQueryController {
             model.addAttribute("id", id);
             model.addAttribute("begindate", begindate);
             model.addAttribute("enddate", enddate);
+            model.addAttribute("op", op);
             model.addAttribute("orders", rechargeQueryService.queryOrder(user.getOrganizationId(), mobile, orderno, id, begindate, enddate));
         }else {
             Date nowDate = new Date();
@@ -90,7 +92,7 @@ public class RechargeQueryController {
 
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
             model.addAttribute("enddate", simpleDateFormat.format(nowDate));
-            nowDate.setTime(myTime);
+            nowDate.setTime(myTime * 1000);
             model.addAttribute("begindate", simpleDateFormat.format(nowDate));
         }
         return "orderquery/cporder";

@@ -29,7 +29,7 @@ public class MobileTest {
             Map<String,String> params = new HashMap<String, String>();
             params.put("code",shortcode);
             params.put("orderno",orderno);
-            GetMethod getMethod = new GetMethod("http://gateway.tonggewang.com/0/api/mobilerecharge/cmcc/sdk/notice?code="+shortcode+"&orderno="+orderno+"&sign="+ SignUtil.signsdk(params,key));
+            GetMethod getMethod = new GetMethod("http://localhost:8080/0/api/mobilerecharge/cmcc/sdk/notice?code="+shortcode+"&orderno="+orderno+"&sign="+ SignUtil.signsdk(params,key));
             getMethod.addRequestHeader("Connection", "Keep-Alive");
             getMethod.addRequestHeader("Accept-Charset", "UTF-8");
             HttpClient client = new HttpClient();
@@ -113,7 +113,7 @@ public class MobileTest {
     public void TestCUPageResource1(){
         try{
             String shortcode = "101";
-            String orderno = "cu-jjjjsdfsfsdf12";
+            String orderno = "cu-fdasdfsa";
             String mobile = "18510326416";
             String fee = "1";
             String channel="APEX-cu-page-1-1";
@@ -124,7 +124,7 @@ public class MobileTest {
             params.put("mobile",mobile);
             params.put("channel",channel);
             params.put("fee",fee);
-            GetMethod getMethod = new GetMethod("http://gateway.tonggewang.com/0/api/mobilerecharge/cu/page/code?code="+shortcode+"&orderno="+orderno+"&mobile="+mobile+"&fee="+fee+"&channel="+channel+"&sign="+ SignUtil.signsdk(params,key));
+            GetMethod getMethod = new GetMethod("http://localhost:8080/0/api/mobilerecharge/cu/page/code?code="+shortcode+"&orderno="+orderno+"&mobile="+mobile+"&fee="+fee+"&channel="+channel+"&sign="+ SignUtil.signsdk(params,key));
             getMethod.addRequestHeader("Connection", "Keep-Alive");
             getMethod.addRequestHeader("Accept-Charset", "UTF-8");
             HttpClient client = new HttpClient();

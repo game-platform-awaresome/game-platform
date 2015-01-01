@@ -5,7 +5,8 @@
 <h4>补单</h4>
 <div class="row">
     <div class="col-sm-8 col-md-4 col-lg-3">
-        <form  role="form" action="/settle/cp/list">
+        <form  role="form" action="/settle/supple">
+            <input type="hidden" name="op" value="q">
             <div class="input-group form-group">
                 <span class="input-group-addon">流水号</span>
                 <input type="text" name="id" class="form-control" placeholder="流水号">

@@ -57,6 +57,7 @@ public class SettleController {
             model.addAttribute("selectedChannel", selectedChannel);
             model.addAttribute("beginDate", beginDate);
             model.addAttribute("endDate", endDate);
+            model.addAttribute("op", op);
         }else {
             Date nowDate = new Date();
 
@@ -99,7 +100,7 @@ public class SettleController {
             model.addAttribute("selectedChannel", selectedChannel);
             model.addAttribute("beginDate", beginDate);
             model.addAttribute("endDate", endDate);
-
+            model.addAttribute("op", op);
         }else {
             Date nowDate = new Date();
 
@@ -122,9 +123,12 @@ public class SettleController {
     @RequestMapping(value = "/supple")
     public String orderSupple(HttpServletRequest request, Model model){
         logger.debug("order supple");
-        String id = request.getParameter("id");
-        String msg = settleService.suppleOrder(id);
-        model.addAttribute("msg", msg);
+        String op = request.getParameter("op");
+        if(op != null && op.equals("q")){
+            String id = request.getParameter("id");
+            String msg = settleService.suppleOrder(id);
+            model.addAttribute("msg", msg);
+        }
         return "settle/supple";
     }
 
