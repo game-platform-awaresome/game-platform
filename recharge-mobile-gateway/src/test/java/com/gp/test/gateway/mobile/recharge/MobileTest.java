@@ -6,7 +6,9 @@ import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.junit.Test;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -172,9 +174,9 @@ public class MobileTest {
     public void TestCUDynamicResource(){
         try{
             String shortcode = "101";
-            String orderno = "123411414034890233";
-            String fee = "1";
-            String channel = "APEX-cu-dynamic-1-1";
+            String orderno = "12347645634654634890233";
+            String fee = "2";
+            String channel = "APEX-cmcc-dynconf-1-2";
             String key = "544260cd58b0e4b0043b0a710eaadefa";
             Map<String,String> params = new HashMap<String, String>();
             params.put("code",shortcode);
@@ -189,13 +191,23 @@ public class MobileTest {
             status = client.executeMethod(getMethod);
             System.out.println(getMethod.getQueryString());
             if (status == 200) {
-                System.out.println(getMethod.getResponseBodyAsString());
+                String repStr = inputStream2String(getMethod.getResponseBodyAsStream());
+                System.out.println(repStr);
             } else {
                 System.out.println("error[RPC-doPostDemandOrder] error, http status:[{}]"+status+" :"+getMethod.getResponseBodyAsString());
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private    String   inputStream2String(InputStream is)   throws   IOException{
+        ByteArrayOutputStream   baos   =   new ByteArrayOutputStream();
+        int   i=-1;
+        while((i=is.read())!=-1){
+            baos.write(i);
+        }
+        return   baos.toString();
     }
 
     @Test

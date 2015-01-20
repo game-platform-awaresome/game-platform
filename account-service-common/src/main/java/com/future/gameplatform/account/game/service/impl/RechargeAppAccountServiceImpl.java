@@ -188,6 +188,10 @@ public class RechargeAppAccountServiceImpl implements RechargeAppAccountService 
                 iterator.remove();
                 continue;
             }
+            if(!pageEntry.getStatus().equalsIgnoreCase("ok")){
+                iterator.remove();
+                continue;
+            }
             if(operator != null && !pageEntry.getOperator().equalsIgnoreCase(operator)){
                 iterator.remove();
                 continue;

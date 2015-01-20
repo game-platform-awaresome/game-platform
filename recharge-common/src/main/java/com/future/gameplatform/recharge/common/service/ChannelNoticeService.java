@@ -18,4 +18,6 @@ public interface ChannelNoticeService {
     ServiceResult<String> receivePlainSmsNotice(String mchNo, String mobile);
 
     ServiceResult<String> receiveAlipayNotice(String no);
+
+    ServiceResult<String> receiveSDKNotice(String mchNo, String fee, String mobile);
 }

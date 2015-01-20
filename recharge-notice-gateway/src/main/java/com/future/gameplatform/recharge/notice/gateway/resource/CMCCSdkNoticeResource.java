@@ -43,7 +43,7 @@ public class CMCCSdkNoticeResource {
         if(!SignUtil.checkChannelSign(sign, MchNo, Fee, Mobile, RechargeConstants.CMCC_SDK_APPKEY)){
             return Response.status(HttpStatus.SC_BAD_REQUEST).entity("111~传入参数有误~").build();
         }
-        ServiceResult<String> serviceResult = channelNoticeService.receiveNotice(MchNo);
+        ServiceResult<String> serviceResult = channelNoticeService.receiveSDKNotice(MchNo, Fee, Mobile);
         if(serviceResult.isSuccess()){
             return Response.ok("000~success~").build();
         }else {

@@ -118,4 +118,31 @@ public class ChannelNoticeServiceImpl implements ChannelNoticeService {
         serviceResult = receiveNotice(smsRecharge.getId());
         return serviceResult;
     }
+
+    @Override
+    public ServiceResult<String> receiveSDKNotice(String mchNo, String fee, String mobile) {
+        ServiceResult<String> serviceResult = new ServiceResult<String>();
+        String[] nos = mchNo.split("__");
+        if(nos == null || nos.length < 2){
+            serviceResult.setSuccess(false);
+            serviceResult.setValue(null);
+            return serviceResult;
+        }
+        String shortcode = nos[0];
+        String orderno = nos[1];
+        SmsRecharge smsRecharge = getSmsRechargeByCode(shortcode, orderno);
+        if(smsRecharge == null){
+            serviceResult.setSuccess(false);
+            serviceResult.setValue(null);
+            return serviceResult;
+        }
+        smsRecharge.setFee(fee);
+        smsRecharge.setMobile(mobile);
+        String oldChannel = smsRecharge.getChannel();
+        oldChannel = oldChannel.substring(0, oldChannel.lastIndexOf("-")+1)+fee;
+        smsRecharge.setChannel(oldChannel);
+        smsRechargeDao.save(smsRecharge);
+        serviceResult = receiveNotice(smsRecharge.getId());
+        return serviceResult;
+    }
 }
