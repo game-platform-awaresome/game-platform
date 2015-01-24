@@ -2,7 +2,11 @@ package com.future.gameplatform.account.game.dao.impl;
 
 import com.future.gameplatform.account.game.dao.DeviceDao;
 import com.future.gameplatform.account.game.entity.Device;
+import com.future.gameplatform.account.game.entity.DeviceActive;
+import com.google.code.morphia.query.Query;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 /**
@@ -44,5 +48,26 @@ public class DeviceDaoImpl extends BasicDaoImpl implements DeviceDao {
     @Override
     public Device getByMobileDid(String mobile, String did) {
         return datastore.find(Device.class).filter("mobile", mobile).filter("did", did).get();
+    }
+
+    @Override
+    public Boolean insertActive(DeviceActive da) {
+        datastore.save(da);
+        return true;
+    }
+
+    @Override
+    public List<DeviceActive> listActiveForStatistic(String selectedCp, String beginDate, String endDate) {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Query<DeviceActive> query = datastore.find(DeviceActive.class);
+        try {
+            query.filter("createdDate > ", simpleDateFormat.parse(beginDate)).filter("createdDate < ", simpleDateFormat.parse(endDate));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        if(selectedCp != null && !selectedCp.startsWith("all_")){
+            query.filter("shortcode", selectedCp);
+        }
+        return query.asList();
     }
 }

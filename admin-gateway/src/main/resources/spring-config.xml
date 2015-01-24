@@ -73,6 +73,12 @@
         <property name="serviceInterface" value="com.future.gameplatform.common.service.RechargeRemoteInterface"/>
     </bean>
 
+    <bean id="activeDeviceRemoteInterface"
+          class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
+        <property name="serviceUrl" value="${client.remote.activedevice.service.url}"/>
+        <property name="serviceInterface" value="com.future.gameplatform.common.service.ActiveDeviceRemoteInterface"/>
+    </bean>
+
 
     <!-- 开启AOP监听 只对当前配置文件有效 -->
     <aop:aspectj-autoproxy expose-proxy="true"/>

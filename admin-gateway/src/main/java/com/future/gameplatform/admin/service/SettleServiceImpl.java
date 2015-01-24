@@ -1,5 +1,6 @@
 package com.future.gameplatform.admin.service;
 
+import com.future.gameplatform.common.service.ActiveDeviceRemoteInterface;
 import com.future.gameplatform.common.service.RechargeRemoteInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,6 +25,9 @@ public class SettleServiceImpl implements SettleService {
     private RechargeHelper rechargeHelper;
     @Autowired
     private RechargeRemoteInterface rechargeRemoteInterface;
+
+    @Autowired
+    private ActiveDeviceRemoteInterface activeDeviceRemoteInterface;
 
     @Override
     public Map<String, String> getCPList() {
@@ -57,6 +61,21 @@ public class SettleServiceImpl implements SettleService {
             return "失败，参数无效！";
         }
         return rechargeRemoteInterface.suppleOrder(id);
+    }
+
+    @Override
+    public List<Map<String, String>> getActiveDeviceAccount(String selectedCp, String beginDate, String endDate) {
+        Date nowDate = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        if(endDate == null){
+            endDate = simpleDateFormat.format(nowDate);
+        }
+
+        if(beginDate == null){
+            nowDate.setTime(nowDate.getTime()-60*60*24*30*1000);
+            beginDate = simpleDateFormat.format(nowDate);
+        }
+        return activeDeviceRemoteInterface.statisticActiveDevice(selectedCp, beginDate, endDate);
     }
 
 }

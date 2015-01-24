@@ -19,4 +19,6 @@ public interface SettleService {
     List<Map<String, String>> getSettle(String selectedShortcode, String selectedChannel, String beginDate, String endDate);
 
     String suppleOrder(String id);
+
+    List<Map<String, String>> getActiveDeviceAccount(String selectedCp, String beginDate, String endDate);
 }

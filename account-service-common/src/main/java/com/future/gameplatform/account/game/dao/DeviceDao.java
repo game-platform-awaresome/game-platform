@@ -1,6 +1,7 @@
 package com.future.gameplatform.account.game.dao;
 
 import com.future.gameplatform.account.game.entity.Device;
+import com.future.gameplatform.account.game.entity.DeviceActive;
 
 import java.util.List;
 
@@ -22,4 +23,8 @@ public interface DeviceDao {
     List<Device> listAll();
 
     Device getByMobileDid(String mobile, String did);
+
+    Boolean insertActive(DeviceActive da);
+
+    List<DeviceActive> listActiveForStatistic(String selectedCp, String beginDate, String endDate);
 }

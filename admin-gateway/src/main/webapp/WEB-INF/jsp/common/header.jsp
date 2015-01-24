@@ -33,6 +33,7 @@
                     <li class="hidden-sm hidden-xs"><a href="/settle/list">充值统计</a></li>
                     <li class="hidden-sm hidden-xs"><a href="/recharge/query/order">充值查询</a></li>
                     <li class="hidden-sm hidden-xs"><a href="/settle/supple">充值补单</a></li>
+                    <li class="hidden-sm hidden-xs"><a href="/active/list">活跃统计</a></li>
                     <li class="hidden-sm hidden-xs"><a href="/register0">CP用户注册</a></li>
 
                     <li class="dropdown hidden-md hidden-lg">
@@ -45,6 +46,7 @@
                             <li><a href="/settle/list">充值统计</a></li>
                             <li><a href="/recharge/query/order">充值查询</a></li>
                             <li><a href="/settle/supple">充值补单</a></li>
+                            <li><a href="/active/list">活跃统计</a></li>
                             <li><a href="/register0">CP用户注册</a></li>
                             <li class="divider"></li>
                             <li><a href="/logout">退出</a></li>

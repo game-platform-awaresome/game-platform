@@ -16,6 +16,13 @@
         <property name="deviceService" ref="deviceService"/>
 	</bean>
 
+    <bean id="activeReaource"
+          class="com.future.gameplatform.account.cp.resource.ActiveResource"
+          scope="singleton"
+          lazy-init="false">
+        <property name="rechargeAppAccountService" ref="rechargeAppAccountService"/>
+        <property name="activeDeviceRemoteInterface" ref="remoteService"/>
+    </bean>
 
 
 
@@ -32,6 +39,7 @@
           lazy-init="false">
         <property name="deviceDao" ref="deviceDao"/>
     </bean>
+
 
 
 
