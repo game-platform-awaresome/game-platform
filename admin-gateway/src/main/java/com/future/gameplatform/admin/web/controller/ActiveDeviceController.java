@@ -3,6 +3,7 @@ package com.future.gameplatform.admin.web.controller;
 import com.future.gameplatform.admin.service.SettleService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,11 +22,9 @@ public class ActiveDeviceController {
 
     private final static Logger logger = LoggerFactory.getLogger(ActiveDeviceController.class);
 
+    @Autowired
     private SettleService settleService;
 
-    public void setSettleService(SettleService settleService) {
-        this.settleService = settleService;
-    }
 
     @RequestMapping(value = "/list")
     public String listActiveDeviceAccount(HttpServletRequest request, Model model){

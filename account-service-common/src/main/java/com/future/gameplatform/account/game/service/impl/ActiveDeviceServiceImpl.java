@@ -4,6 +4,8 @@ import com.future.gameplatform.account.game.dao.DeviceDao;
 import com.future.gameplatform.account.game.entity.DeviceActive;
 import com.future.gameplatform.common.id.IdFactory;
 import com.future.gameplatform.common.service.ActiveDeviceRemoteInterface;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
 import java.text.SimpleDateFormat;
@@ -13,6 +15,8 @@ import java.util.*;
  * Created by johnKee on 2015/1/24.
  */
 public class ActiveDeviceServiceImpl implements ActiveDeviceRemoteInterface {
+
+    private Logger logger = LoggerFactory.getLogger(ActiveDeviceServiceImpl.class);
 
     private DeviceDao deviceDao;
 
@@ -40,7 +44,7 @@ public class ActiveDeviceServiceImpl implements ActiveDeviceRemoteInterface {
 
     @Override
     public List<Map<String, String>> statisticActiveDevice(String selectedCp, String beginDate, String endDate) {
-
+        logger.debug("statistic active device");
         List<DeviceActive> listActive= deviceDao.listActiveForStatistic(selectedCp, beginDate, endDate);
         if(listActive == null || listActive.size() < 1){
             return Collections.EMPTY_LIST;

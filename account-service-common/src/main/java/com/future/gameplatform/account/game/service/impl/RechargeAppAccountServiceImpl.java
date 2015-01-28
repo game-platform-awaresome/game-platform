@@ -255,4 +255,10 @@ public class RechargeAppAccountServiceImpl implements RechargeAppAccountService 
         List<RechargeAppAccount> accountList = rechargeAppAccountDao.listAllSimple();
         return accountList;
     }
+
+    @Override
+    public RechargeAppAccount save(RechargeAppAccount rechargeAppAccount) {
+        rechargeAppAccountDao.insert(rechargeAppAccount);
+        return rechargeAppAccount;
+    }
 }

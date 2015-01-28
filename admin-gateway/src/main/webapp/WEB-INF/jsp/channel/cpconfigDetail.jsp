@@ -6,7 +6,16 @@
 
 <h4>cp名称:<small>${account.cpName}</small></h4>
 <h4>短码:<small>${account.shortcode}</small></h4>
+<div class="row">
+    <div class="col-sm-3 col-md-6 col-lg-8">
 
+    </div>
+    <div class="col-sm-9 col-md-6 col-lg-4">
+        <a href="/channel/configupdate/${account.id}" class="btn btn-primary" role="button">
+            参照模板更新通道
+        </a>
+    </div>
+</div>
 <div class="row">
     <div class="table-responsive">
         <table class="table">

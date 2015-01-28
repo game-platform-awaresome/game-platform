@@ -31,4 +31,6 @@ public interface RechargeAppAccountService {
     String getKeyByCode(String shortcode);
 
     List<RechargeAppAccount> listAllSimple();
+
+    RechargeAppAccount save(RechargeAppAccount rechargeAppAccount);
 }

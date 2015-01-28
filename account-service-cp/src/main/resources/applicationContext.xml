@@ -16,7 +16,7 @@
         <property name="deviceService" ref="deviceService"/>
 	</bean>
 
-    <bean id="activeReaource"
+    <bean id="activeResource"
           class="com.future.gameplatform.account.cp.resource.ActiveResource"
           scope="singleton"
           lazy-init="false">
@@ -72,4 +72,5 @@
         class="com.future.gameplatform.account.monitor.UserAccountJMX">
     </bean>
     -->
+    <import resource="spring-mvc-remote-service.xml"/>
 </beans>

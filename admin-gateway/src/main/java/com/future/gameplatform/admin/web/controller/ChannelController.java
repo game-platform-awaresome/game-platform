@@ -61,6 +61,33 @@ public class ChannelController {
         return "channel/config1stepedit";
     }
 
+    @RequestMapping(value = "/configupdate/{id}")
+    public String configupdate(@PathVariable("id")String id, HttpServletRequest request, Model model){
+        logger.debug("begin update config from template,id [{}]", id);
+        RechargeAppAccount cpConfig = rechargeAppAccountService.getById(id);
+        RechargeAppAccount templateConfig = rechargeAppAccountService.getById(UserAccountString.RECHARGE_ACCOUNT_DEFAULT_ID);
+        List<AccountItem> oldItems = cpConfig.getItems();
+        List<AccountItem> templateItems = templateConfig.getItems();
+        Iterator<AccountItem> itemIterator = templateItems.iterator();
+        while (itemIterator.hasNext()){
+            AccountItem templateEntry = itemIterator.next();
+            Iterator<AccountItem> oldIterator = oldItems.iterator();
+            boolean shouldPut = true;
+            while (oldIterator.hasNext()){
+                AccountItem oldEntry = oldIterator.next();
+                if(oldEntry.getChannel().equals(templateEntry.getChannel())){
+                    shouldPut = false;
+                }
+            }
+            if(shouldPut){
+                oldItems.add(templateEntry);
+            }
+        }
+        rechargeAppAccountService.save(cpConfig);
+        model.addAttribute("account", cpConfig);
+        return "channel/cpconfigDetail";
+    }
+
     @RequestMapping(value = "/doconfig1step", method = RequestMethod.POST )
     public String doConfig1Step(HttpServletRequest request, Model model){
         logger.debug("do config first step");
