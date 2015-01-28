@@ -138,9 +138,9 @@ public class ChannelNoticeServiceImpl implements ChannelNoticeService {
         }
         smsRecharge.setFee(fee);
         smsRecharge.setMobile(mobile);
-        String oldChannel = smsRecharge.getChannel();
+/*        String oldChannel = smsRecharge.getChannel();
         oldChannel = oldChannel.substring(0, oldChannel.lastIndexOf("-")+1)+fee;
-        smsRecharge.setChannel(oldChannel);
+        smsRecharge.setChannel(oldChannel);*/
         smsRechargeDao.save(smsRecharge);
         serviceResult = receiveNotice(smsRecharge.getId());
         return serviceResult;
