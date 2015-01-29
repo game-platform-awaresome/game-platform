@@ -26,12 +26,14 @@ public class MobileTest {
     public void TestCmccResource(){
         try{
             String shortcode = "101";
-            String orderno = "jjjjsdfsfsdf";
-            String key = "ODQwRjgyNTQ2NzVDOEJBMjExODE0ODA";
+            String orderno = "423444232";
+            String channel="APEX-cmcc-sdkoffline-1-2";
+            String key = "544260cd58b0e4b0043b0a710eaadefa";
             Map<String,String> params = new HashMap<String, String>();
             params.put("code",shortcode);
             params.put("orderno",orderno);
-            GetMethod getMethod = new GetMethod("http://localhost:8080/0/api/mobilerecharge/cmcc/sdk/notice?code="+shortcode+"&orderno="+orderno+"&sign="+ SignUtil.signsdk(params,key));
+            params.put("channel",channel);
+            GetMethod getMethod = new GetMethod("http://gateway.tonggewang.com/0/api/mobilerecharge/cmcc/sdk/notice?code="+shortcode+"&orderno="+orderno+"&channel="+channel+"&sign="+ SignUtil.signsdk(params,key));
             getMethod.addRequestHeader("Connection", "Keep-Alive");
             getMethod.addRequestHeader("Accept-Charset", "UTF-8");
             HttpClient client = new HttpClient();
@@ -244,8 +246,8 @@ public class MobileTest {
     public void TestGETAcccResource(){
         try{
             String shortcode = "101";
-            String operator = "alipay";
-            String fee = "1";
+            String operator = "cmcc";
+            String fee = "2";
             String version = "1.001.001";
             String key = "544260cd58b0e4b0043b0a710eaadefa";
             Map<String,String> params = new HashMap<String, String>();
@@ -301,5 +303,42 @@ public class MobileTest {
         String channel="APEX-cu-dynamic-1-1";
         String t= channel.substring(0, channel.lastIndexOf("-"));
         System.out.println("---->"+t);
+    }
+
+    @Test
+    public void TestActiveDevice(){
+        try{
+            String code="101";
+            String did = "123411414638421003";
+            String mobile = "18601070512";
+            String dtype = "android1";
+            String brand="huawei";
+            String os = "ad";
+            String version="1.001.001";
+            String key = "544260cd58b0e4b0043b0a710eaadefa";
+
+            Map<String,String> params = new HashMap<String, String>();
+            params.put("code",code);
+            params.put("did",did);
+            params.put("dType",dtype);
+            params.put("brand",brand);
+            params.put("os",os);
+            params.put("version",version);
+            //String url = RechargeConstants.CU_PAGE_REQUEST_URL+"?MchId="+RechargeConstants.CU_PAGE_APPID+"&MchNo="+id+"&Mobile="+mobile+"&Fee="+fee+"&Sign="+ SignUtil.getChannelSign(RechargeConstants.CU_PAGE_APPID, id, mobile, fee, RechargeConstants.CU_PAGE_APPKEY);
+            GetMethod getMethod = new GetMethod("http://pay.tonggewang.com/0/api/device/active?code="+code+"&did="+did+"&mobile="+mobile+"&dType="+dtype+"&brand="+brand+"&os="+os+"&version="+version+"&sign="+SignUtil.signsdk(params,key));
+            getMethod.addRequestHeader("Connection", "Keep-Alive");
+            getMethod.addRequestHeader("Accept-Charset", "UTF-8");
+            HttpClient client = new HttpClient();
+            int status = 0;
+            status = client.executeMethod(getMethod);
+            System.out.println(getMethod.getQueryString());
+            if (status == 200) {
+                System.out.println(getMethod.getResponseBodyAsString());
+            } else {
+                System.out.println("error[RPC-doPostDemandOrder] error, http status:[{}]"+status+" :"+getMethod.getResponseBodyAsString());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

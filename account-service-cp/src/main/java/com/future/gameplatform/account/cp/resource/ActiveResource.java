@@ -55,6 +55,7 @@ public class ActiveResource {
         String appKey = rechargeAppAccountService.getKeyByCode(shortCode);
         params.put("code",shortCode);
         params.put("did",did);
+        params.put("mobile",mobile);
         params.put("dType", dType);
         params.put("brand", brand);
         params.put("os", os);
@@ -75,5 +76,7 @@ public class ActiveResource {
             return Response.ok(result).build();
         }
     }
+
+
 
 }
