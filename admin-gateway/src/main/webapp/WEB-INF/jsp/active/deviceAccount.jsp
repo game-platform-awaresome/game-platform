@@ -75,7 +75,7 @@
             </tr>
             </thead>
             <tbody>
-            <c:forEach items="${settles}" var="item">
+            <c:forEach items="${devices}" var="item">
                 <tr>
                     <td>${item.statisticTarget}</td>
                     <td>${item.s_count}</td>

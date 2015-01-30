@@ -50,6 +50,8 @@ public class ActiveDeviceServiceImpl implements ActiveDeviceRemoteInterface {
             return Collections.EMPTY_LIST;
         }
         List<Map<String, String>> result = new ArrayList<Map<String, String>>();
+
+        Map<String,Set<String>> mapSet = new HashMap<String, Set<String>>();
         Map<String, Integer> mapIndex = new HashMap<String, Integer>();
         if(selectedCp.equals("all_multi")) {
             Iterator<DeviceActive> srIt = listActive.iterator();
@@ -62,10 +64,17 @@ public class ActiveDeviceServiceImpl implements ActiveDeviceRemoteInterface {
                     mapEntry.put("statisticTarget", deviceActive.getShortcode());
                     result.add(mapEntry);
                     mapIndex.put(deviceActive.getShortcode(), result.size() - 1);
+                    Set<String> set = new HashSet<String>();
+                    set.add(deviceActive.getDid());
+                    mapSet.put(deviceActive.getShortcode(), set);
                 } else {
                     mapEntry = result.get(mapIndex.get(deviceActive.getShortcode()));
+                    Set<String> setValue = mapSet.get(deviceActive.getShortcode());
+                    if(!setValue.contains(deviceActive.getDid())){
+                        mapEntry.put("s_count", String.valueOf(1 + Integer.parseInt(mapEntry.get("s_count"))));
+                        setValue.add(deviceActive.getDid());
+                    }
                 }
-                mapEntry.put("s_count", String.valueOf(1 + Integer.parseInt(mapEntry.get("s_count"))));
             }
         }else {
             Iterator<DeviceActive> srIt = listActive.iterator();
@@ -79,10 +88,18 @@ public class ActiveDeviceServiceImpl implements ActiveDeviceRemoteInterface {
                     mapEntry.put("statisticTarget", simpleDateFormat.format(deviceActive.getCreatedDate()));
                     result.add(mapEntry);
                     mapIndex.put(simpleDateFormat.format(deviceActive.getCreatedDate()), result.size() - 1);
+                    Set<String> set = new HashSet<String>();
+                    set.add(deviceActive.getDid());
+                    mapSet.put(simpleDateFormat.format(deviceActive.getCreatedDate()), set);
                 } else {
                     mapEntry = result.get(mapIndex.get(simpleDateFormat.format(deviceActive.getCreatedDate())));
+                    Set<String> setValue = mapSet.get(simpleDateFormat.format(deviceActive.getCreatedDate()));
+                    if(!setValue.contains(deviceActive.getDid())){
+                        mapEntry.put("s_count", String.valueOf(1 + Integer.parseInt(mapEntry.get("s_count"))));
+                        setValue.add(deviceActive.getDid());
+                    }
                 }
-                mapEntry.put("s_count", String.valueOf(1 + Integer.parseInt(mapEntry.get("s_count"))));
+
             }
         }
         return result;
