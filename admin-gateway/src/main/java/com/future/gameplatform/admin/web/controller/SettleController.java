@@ -47,10 +47,12 @@ public class SettleController {
                 model.addAttribute("errMsg","日期格式不对或不是一个有效的时间段！");
                 return "settle/list";
             }
+            /**
             if(selectedCp.equals("all_multi") && selectedChannel.equals("all_multi"))  {
                 model.addAttribute("errMsg", "不能同时分CP和渠道统计！") ;
                 return "settle/list";
             }
+             */
             model.addAttribute("settles", settleService.getSettle(selectedCp, selectedChannel, beginDate, endDate));
 
             model.addAttribute("selectedCp", selectedCp);
@@ -61,11 +63,12 @@ public class SettleController {
         }else {
             Date nowDate = new Date();
 
-            long myTime=(nowDate.getTime()/1000)-60*60*24*30;
+            long myTime=(nowDate.getTime()/1000)-60*60*24*15;
 
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
             String selectedCp = "all_multi";
             String selectedChannel = "all_single";
+            nowDate.setTime(nowDate.getTime() + 1000*60*60*24);
             String endDate = simpleDateFormat.format(nowDate);
             nowDate.setTime(myTime*1000);
             String beginDate = simpleDateFormat.format(nowDate);
@@ -104,11 +107,12 @@ public class SettleController {
         }else {
             Date nowDate = new Date();
 
-            long myTime=(nowDate.getTime()/1000)-60*60*24*30;
+            long myTime=(nowDate.getTime()/1000)-60*60*24*15;
 
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
             String selectedChannel = "all_multi";
+            nowDate.setTime(nowDate.getTime() + 1000*60*60*24);
             String endDate = simpleDateFormat.format(nowDate);
             nowDate.setTime(myTime*1000);
             String beginDate = simpleDateFormat.format(nowDate);

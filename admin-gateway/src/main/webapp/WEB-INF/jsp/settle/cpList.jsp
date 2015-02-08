@@ -12,10 +12,10 @@
             <span class="input-group-addon">通道</span>
             <select class="form-control" name="channel" >
                 <c:if test="${selectedChannel eq 'all_multi'}">
-                    <option value="all_multi"  selected="selected">按通道统计所有</option>
+                    <option value="all_multi"  selected="selected">统计所有通道</option>
                 </c:if>
                 <c:if test="${selectedChannel ne 'all_multi'}">
-                    <option value="all_multi">按通道统计所有</option>
+                    <option value="all_multi">所有通道统计</option>
                 </c:if>
                 <c:forEach items="${channels}" var="channelEntry">
                     <c:if test="${selectedChannel eq channelEntry.key}">
@@ -57,32 +57,25 @@
     <table class="table">
         <thead>
         <tr>
-            <c:if test="${selectedChannel eq 'all_multi'}">
-                <th>通道</th>
-            </c:if>
-            <c:if test="${selectedChannel ne 'all_multi'}">
-                <th>日期</th>
-            </c:if>
+            <th>日期</th>
+            <th>活跃数</th>
+            <!--
             <th>订单总数</th>
             <th>总金额</th>
             <th>未计费数</th>
             <th>未计费金额</th>
             <th>已计费未通知cp数</th>
             <th>已计费未通知cp金额</th>
-            <th>已计费已通知cp数</th>
-            <th>已计费已通知cp金额</th>
+            -->
+            <th>计费数</th>
+            <th>计费金额</th>
         </tr>
         </thead>
         <tbody>
         <c:forEach items="${settles}" var="item">
             <tr>
                 <td>${item.statisticTarget}</td>
-                <td>${item.s_count}</td>
-                <td>${item.s_sum}</td>
-                <td>${item.s1_count}</td>
-                <td>${item.s1_sum}</td>
-                <td>${item.s4_count}</td>
-                <td>${item.s4_sum}</td>
+                <td>${item.ac_count}</td>
                 <td>${item.s6_count}</td>
                 <td>${item.s6_sum}</td>
             </tr>

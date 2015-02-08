@@ -7,6 +7,7 @@ import com.future.gameplatform.recharge.common.util.RechargeStateEnum;
 import com.future.gameplatform.recharge.common.util.ServiceResult;
 
 import java.math.BigDecimal;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -39,6 +40,32 @@ public class RechargeRemoteServiceImpl implements RechargeRemoteInterface {
         }
         List<Map<String, String>> result = new ArrayList<Map<String, String>>();
         Map<String, Integer> mapIndex = new HashMap<String, Integer>();
+
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+        try {
+            Date bDate = simpleDateFormat.parse(beginDate);
+            Date eDate = simpleDateFormat.parse(endDate);
+            while (bDate.compareTo(eDate) < 0){
+                Map<String, String>  map = new HashMap<String, String>();
+                map.put("statisticTarget", simpleDateFormat.format(bDate));
+                map.put("s_count", "0");
+                map.put("s_sum", "0");
+                map.put("s1_count", "0");
+                map.put("s1_sum", "0");
+                map.put("s4_count", "0");
+                map.put("s4_sum", "0");
+                map.put("s6_count", "0");
+                map.put("s6_sum", "0");
+                result.add(map);
+                mapIndex.put(simpleDateFormat.format(bDate), result.size() - 1);
+                bDate.setTime(bDate.getTime() + 1000*60*60*24);
+            }
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        /**
         if(selectedShortcode.equals("all_multi")){
             Iterator<SmsRecharge> srIt = listRecharge.iterator();
             while (srIt.hasNext()){
@@ -136,55 +163,39 @@ public class RechargeRemoteServiceImpl implements RechargeRemoteInterface {
                 }
             }
         }else {
+         **/
             Iterator<SmsRecharge> srIt = listRecharge.iterator();
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
             while (srIt.hasNext()){
                 SmsRecharge smsRecharge = srIt.next();
-                Map<String, String> mapEntry = null;
-                if(mapIndex.get(simpleDateFormat.format(smsRecharge.getCreatedDate())) == null){
-                    mapEntry = new HashMap<String, String>();
-                    mapEntry.put("s_count", "0");
-                    mapEntry.put("s_sum", "0");
-                    mapEntry.put("s1_count", "0");
-                    mapEntry.put("s1_sum", "0");
-                    mapEntry.put("s4_count", "0");
-                    mapEntry.put("s4_sum", "0");
-                    mapEntry.put("s6_count", "0");
-                    mapEntry.put("s6_sum", "0");
-                    mapEntry.put("statisticTarget", simpleDateFormat.format(smsRecharge.getCreatedDate()));
-                    result.add(mapEntry);
-                    mapIndex.put(simpleDateFormat.format(smsRecharge.getCreatedDate()),result.size()-1);
-                } else {
-                    mapEntry = result.get(mapIndex.get(simpleDateFormat.format(smsRecharge.getCreatedDate())));
-                }
+                Map<String, String> mapEntry = result.get(mapIndex.get(simpleDateFormat.format(smsRecharge.getCreatedDate())));
                 switch (smsRecharge.getState()){
                     case 1:
                     case 2:
                     case 3:
                         mapEntry.put("s1_count", String.valueOf(1 + Integer.parseInt(mapEntry.get("s1_count"))));
-                        mapEntry.put("s1_sum", String.valueOf(new BigDecimal(smsRecharge.getFee()).add(new BigDecimal(mapEntry.get("s1_sum")))));
+                        mapEntry.put("s1_sum", String.valueOf(new BigDecimal(smsRecharge.getFee() == null?"0":smsRecharge.getFee()).add(new BigDecimal(mapEntry.get("s1_sum")))));
 
                         mapEntry.put("s_count", String.valueOf(1 + Integer.parseInt(mapEntry.get("s_count"))));
-                        mapEntry.put("s_sum", String.valueOf(new BigDecimal(smsRecharge.getFee()).add(new BigDecimal(mapEntry.get("s_sum")))));
+                        mapEntry.put("s_sum", String.valueOf(new BigDecimal(smsRecharge.getFee() == null?"0":smsRecharge.getFee()).add(new BigDecimal(mapEntry.get("s_sum")))));
                         break;
                     case 4:
                     case 5:
                         mapEntry.put("s4_count", String.valueOf(1 + Integer.parseInt(mapEntry.get("s4_count"))));
-                        mapEntry.put("s4_sum", String.valueOf(new BigDecimal(smsRecharge.getFee()).add(new BigDecimal(mapEntry.get("s4_sum")))));
+                        mapEntry.put("s4_sum", String.valueOf(new BigDecimal(smsRecharge.getFee() == null?"0":smsRecharge.getFee()).add(new BigDecimal(mapEntry.get("s4_sum")))));
 
                         mapEntry.put("s_count", String.valueOf(1 + Integer.parseInt(mapEntry.get("s_count"))));
-                        mapEntry.put("s_sum", String.valueOf(new BigDecimal(smsRecharge.getFee()).add(new BigDecimal(mapEntry.get("s_sum")))));
+                        mapEntry.put("s_sum", String.valueOf(new BigDecimal(smsRecharge.getFee() == null?"0":smsRecharge.getFee()).add(new BigDecimal(mapEntry.get("s_sum")))));
                         break;
                     case 6:
                         mapEntry.put("s6_count", String.valueOf(1 + Integer.parseInt(mapEntry.get("s6_count"))));
-                        mapEntry.put("s6_sum", String.valueOf(new BigDecimal(smsRecharge.getFee()).add(new BigDecimal(mapEntry.get("s6_sum")))));
+                        mapEntry.put("s6_sum", String.valueOf(new BigDecimal(smsRecharge.getFee() == null?"0":smsRecharge.getFee()).add(new BigDecimal(mapEntry.get("s6_sum")))));
 
                         mapEntry.put("s_count", String.valueOf(1 + Integer.parseInt(mapEntry.get("s_count"))));
-                        mapEntry.put("s_sum", String.valueOf(new BigDecimal(smsRecharge.getFee()).add(new BigDecimal(mapEntry.get("s_sum")))));
+                        mapEntry.put("s_sum", String.valueOf(new BigDecimal(smsRecharge.getFee() == null?"0":smsRecharge.getFee()).add(new BigDecimal(mapEntry.get("s_sum")))));
                         break;
                 }
             }
-        }
         return result;
     }
 

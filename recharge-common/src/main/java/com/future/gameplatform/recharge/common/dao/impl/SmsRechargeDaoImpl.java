@@ -69,7 +69,8 @@ public class SmsRechargeDaoImpl extends BasicDaoImpl implements SmsRechargeDao {
     @Override
     public List<SmsRecharge> listForStatistic(String selectedShortcode, String selectedChannel, String beginDate, String endDate) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        Query<SmsRecharge> query = datastore.find(SmsRecharge.class).filter("state > ", 3);
+       // Query<SmsRecharge> query = datastore.find(SmsRecharge.class).filter("state > ", 3);
+        Query<SmsRecharge> query = datastore.find(SmsRecharge.class);
         try {
             query.filter("createdDate > ", simpleDateFormat.parse(beginDate)).filter("createdDate < ", simpleDateFormat.parse(endDate));
         } catch (ParseException e) {
@@ -79,7 +80,7 @@ public class SmsRechargeDaoImpl extends BasicDaoImpl implements SmsRechargeDao {
             query.filter("shortcode", selectedShortcode);
         }
         if(selectedChannel != null && !selectedChannel.startsWith("all_")){
-            query.filter("channel", selectedChannel);
+            query.field("channel").startsWithIgnoreCase(selectedChannel);
         }
         return query.asList();
     }

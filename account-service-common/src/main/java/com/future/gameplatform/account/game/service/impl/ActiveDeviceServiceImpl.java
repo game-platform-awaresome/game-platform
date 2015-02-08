@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -52,7 +53,28 @@ public class ActiveDeviceServiceImpl implements ActiveDeviceRemoteInterface {
         List<Map<String, String>> result = new ArrayList<Map<String, String>>();
 
         Map<String,Set<String>> mapSet = new HashMap<String, Set<String>>();
+
         Map<String, Integer> mapIndex = new HashMap<String, Integer>();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+        try {
+            Date bDate = simpleDateFormat.parse(beginDate);
+            Date eDate = simpleDateFormat.parse(endDate);
+            while (bDate.compareTo(eDate) < 0){
+                Map<String, String>  map = new HashMap<String, String>();
+                map.put("statisticTarget", simpleDateFormat.format(bDate));
+                map.put("s_count","0");
+                result.add(map);
+                mapSet.put(simpleDateFormat.format(bDate), new HashSet<String>());
+                mapIndex.put(simpleDateFormat.format(bDate), result.size() - 1);
+                bDate.setTime(bDate.getTime() + 1000*60*60*24);
+            }
+        } catch (ParseException e) {
+            logger.error("date format error", e);
+        }
+
+
+        /**
         if(selectedCp.equals("all_multi")) {
             Iterator<DeviceActive> srIt = listActive.iterator();
             while (srIt.hasNext()) {
@@ -77,30 +99,19 @@ public class ActiveDeviceServiceImpl implements ActiveDeviceRemoteInterface {
                 }
             }
         }else {
+         **/
             Iterator<DeviceActive> srIt = listActive.iterator();
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
             while (srIt.hasNext()) {
                 DeviceActive deviceActive = srIt.next();
                 Map<String, String> mapEntry = null;
-                if (mapIndex.get(simpleDateFormat.format(deviceActive.getCreatedDate())) == null) {
-                    mapEntry = new HashMap<String, String>();
-                    mapEntry.put("s_count", "0");
-                    mapEntry.put("statisticTarget", simpleDateFormat.format(deviceActive.getCreatedDate()));
-                    result.add(mapEntry);
-                    mapIndex.put(simpleDateFormat.format(deviceActive.getCreatedDate()), result.size() - 1);
-                    Set<String> set = new HashSet<String>();
-                    set.add(deviceActive.getDid());
-                    mapSet.put(simpleDateFormat.format(deviceActive.getCreatedDate()), set);
-                } else {
-                    mapEntry = result.get(mapIndex.get(simpleDateFormat.format(deviceActive.getCreatedDate())));
-                    Set<String> setValue = mapSet.get(simpleDateFormat.format(deviceActive.getCreatedDate()));
-                    if(!setValue.contains(deviceActive.getDid())){
-                        mapEntry.put("s_count", String.valueOf(1 + Integer.parseInt(mapEntry.get("s_count"))));
-                        setValue.add(deviceActive.getDid());
-                    }
-                }
 
-            }
+                mapEntry = result.get(mapIndex.get(simpleDateFormat.format(deviceActive.getCreatedDate())));
+                Set<String> setValue = mapSet.get(simpleDateFormat.format(deviceActive.getCreatedDate()));
+                if(!setValue.contains(deviceActive.getDid())){
+                    mapEntry.put("s_count", String.valueOf(1 + Integer.parseInt(mapEntry.get("s_count"))));
+                    setValue.add(deviceActive.getDid());
+                }
         }
         return result;
     }

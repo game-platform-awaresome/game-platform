@@ -216,7 +216,7 @@ public class MobileTest {
     public void testAlipayNotice(){
         try{
             String shortcode = "101";
-            String orderno = "123411414034833333";
+            String orderno = "1234114140348335243";
             String fee = "1";
             String channel = "APEX-alipay-mobile-1-1";
             String key = "544260cd58b0e4b0043b0a710eaadefa";

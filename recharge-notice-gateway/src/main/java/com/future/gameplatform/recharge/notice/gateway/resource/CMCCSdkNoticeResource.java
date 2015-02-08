@@ -8,10 +8,7 @@ import org.apache.commons.httpclient.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.ws.rs.FormParam;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.HashMap;
@@ -38,7 +35,11 @@ public class CMCCSdkNoticeResource {
     @POST
     @Path("/cmcc/sdk")
     @Produces(MediaType.TEXT_PLAIN)
-    public Response receiveNotice(@FormParam("MchNo") String MchNo, @FormParam("Fee")String Fee, @FormParam("Mobile")String Mobile, @FormParam("sign")String sign,@FormParam("merPriv")String merPriv){
+    public Response receiveNotice(@QueryParam("MchNo") String MchNo,
+                                  @QueryParam("Fee")String Fee,
+                                  @QueryParam("Mobile")String Mobile,
+                                  @QueryParam("sign")String sign,
+                                  @QueryParam("merPriv")String merPriv){
         logger.debug("received notice from cmcc hfb,mchno:[{}]", MchNo);
         if(!SignUtil.checkChannelSign(sign, MchNo, Fee, Mobile, RechargeConstants.CMCC_SDK_APPKEY)){
             return Response.status(HttpStatus.SC_BAD_REQUEST).entity("111~传入参数有误~").build();

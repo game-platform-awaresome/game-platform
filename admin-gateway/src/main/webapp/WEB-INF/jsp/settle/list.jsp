@@ -19,10 +19,10 @@
                 <span class="input-group-addon">CP名称</span>
                 <select class="form-control" name="cp" >
                     <c:if test="${selectedCp eq 'all_multi'}">
-                        <option value="all_multi"  selected="selected">按CP统计所有</option>
+                        <option value="all_multi"  selected="selected">统计所有CP</option>
                     </c:if>
                     <c:if test="${selectedCp ne 'all_multi'}">
-                        <option value="all_multi">按CP统计所有</option>
+                        <option value="all_multi">统计所有CP</option>
                     </c:if>
                     <c:forEach items="${cps}" var="cpEntry">
                         <c:if test="${selectedCp eq cpEntry.key}">
@@ -38,10 +38,10 @@
                 <span class="input-group-addon">通道</span>
                 <select class="form-control" name="channel" >
                     <c:if test="${selectedChannel eq 'all_multi'}">
-                        <option value="all_multi"  selected="selected">按通道统计所有</option>
+                        <option value="all_multi"  selected="selected">统计所有通道</option>
                     </c:if>
                     <c:if test="${selectedChannel ne 'all_multi'}">
-                        <option value="all_multi">按通道统计所有</option>
+                        <option value="all_multi">统计所有通道</option>
                     </c:if>
                     <c:forEach items="${channels}" var="channelEntry">
                         <c:if test="${selectedChannel eq channelEntry.key}">
@@ -82,16 +82,8 @@
         <table class="table">
             <thead>
             <tr>
-                <c:if test="${selectedChannel eq 'all_multi'}">
-                    <th>通道</th>
-                </c:if>
-                <c:if test="${selectedCp eq 'all_multi'}">
-                    <th>CP名称</th>
-                </c:if>
-                <c:if test="${selectedChannel ne 'all_multi' and selectedCp ne 'all_multi'}">
-                    <th>日期</th>
-                </c:if>
-
+                <th>日期</th>
+                <th>活跃数</th>
                 <th>订单总数</th>
                 <th>总金额</th>
                 <th>未计费数</th>
@@ -106,6 +98,7 @@
             <c:forEach items="${settles}" var="item">
                 <tr>
                     <td>${item.statisticTarget}</td>
+                    <td>${item.ac_count}</td>
                     <td>${item.s_count}</td>
                     <td>${item.s_sum}</td>
                     <td>${item.s1_count}</td>
