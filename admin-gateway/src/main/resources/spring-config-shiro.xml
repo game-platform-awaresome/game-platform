@@ -124,6 +124,7 @@
                 /static/** = anon
                 /jcaptcha* = anon
                 /register* = anon
+                /changepwd/admin = authc
                 /login = jCaptchaValidate,authc
                 /logout = logout
                 /authenticated = authc

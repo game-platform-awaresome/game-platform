@@ -30,6 +30,16 @@ public class PasswordHelper {
         this.hashIterations = hashIterations;
     }
 
+    public boolean pwdValid(User user, String plainPwd){
+        String newPwd = new SimpleHash(
+                algorithmName,
+                plainPwd,
+                ByteSource.Util.bytes(user.getCredentialsSalt()),
+                hashIterations).toHex();
+
+        return newPwd.equalsIgnoreCase(user.getPassword());
+    }
+
     public void encryptPassword(User user) {
 
         user.setSalt(randomNumberGenerator.nextBytes().toHex());

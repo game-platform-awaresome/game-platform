@@ -7,6 +7,11 @@
         <h1 style="text-align: center">
             欢迎回来
         </h1>
+        <c:if test="${not empty error}">
+            <div class="alert alert-danger">
+                <h4>${error}</h4>
+            </div>
+        </c:if>
         <form  role="form" method="post" action="">
             <div class="input-group form-group input-group-lg">
                 <span class="glyphicon glyphicon-user input-group-addon"></span>

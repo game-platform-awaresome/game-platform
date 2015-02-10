@@ -9,14 +9,12 @@
         </ul>
     </div>
     <div class="col-sm-9 col-md-6 col-lg-4">
-        <shiro:guest>
-            <ul id="nonLoginBar" class="nav navbar-nav navbar-right navbar-sm hidden-sm hidden-xs">
-                <li><a id="login-panel" href="/login" rel="nofollow">登录</a></li>
-            </ul>
-        </shiro:guest>
         <shiro:authenticated>
             <ul id="loginBar" class="nav navbar-nav navbar-right navbar-sm hidden-sm hidden-xs">
                 <li><a id="nomeaming" class="btn btn-sm"> 欢迎[<shiro:principal></shiro:principal>] </a></li>
+            <shiro:hasRole name="admin">
+                <li><a id="changpwd" href="/changepwd/<shiro:principal></shiro:principal>" class="btn btn-sm">修改密码</a></li>
+            </shiro:hasRole>
                 <li><a id="logout" href="/logout" class="btn btn-sm" rel="nofollow">退出</a></li>
             </ul>
         </shiro:authenticated>

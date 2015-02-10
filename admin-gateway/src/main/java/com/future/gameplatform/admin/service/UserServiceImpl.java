@@ -56,6 +56,19 @@ public class UserServiceImpl implements UserService {
         userDao.updateUser(user);
     }
 
+
+    public String validAndChangePassword(String username, String oldpwdplain, String pwd){
+        User user = userDao.findByUsername(username);
+        if(passwordHelper.pwdValid(user, oldpwdplain)){
+            user.setPassword(pwd);
+            passwordHelper.encryptPassword(user);
+            userDao.updateUser(user);
+            return "success";
+        } else {
+            return "旧密码不对！";
+        }
+    }
+
     @Override
     public User findOne(String userId) {
         return userDao.findOne(userId);

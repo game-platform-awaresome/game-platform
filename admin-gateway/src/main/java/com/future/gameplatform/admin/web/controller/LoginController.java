@@ -2,6 +2,7 @@ package com.future.gameplatform.admin.web.controller;
 
 import com.future.gameplatform.admin.entity.User;
 import com.future.gameplatform.admin.service.UserService;
+import com.future.gameplatform.common.id.IdFactory;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.slf4j.Logger;
@@ -10,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -80,6 +83,7 @@ public class LoginController {
             return "register1";
         }
         User user = new User();
+        user.setId(IdFactory.generateId());
         user.setOrganizationId(organizationId);
         user.setUsername(username);
         user.setPassword(passwd);
@@ -89,6 +93,31 @@ public class LoginController {
         userService.createUser(user);
         logger.debug("do reg success, should go to login");
         return "index";
+    }
+
+    @RequestMapping(value = "/changepwd/{username}")
+    public String showChangePwdForm(HttpServletRequest request, Model model){
+        logger.debug("request change admin password");
+        return "changePwd";
+    }
+
+    @RequestMapping(value = "/changepwd/{username}", method = RequestMethod.POST)
+    public String doChangePwd(String oldPwd, String pwd, String rePwd, @PathVariable("username")String username,Model model){
+        logger.debug("do change {} password.", username);
+        String error = null;
+        if(StringUtils.isEmpty(pwd) || StringUtils.isEmpty(rePwd) || StringUtils.isEmpty(oldPwd)){
+            error = "密码不能为空！";
+        } else if(!pwd.equalsIgnoreCase(rePwd)){
+            error = "新密码与确认密码不一致！";
+        }else {
+            String changeResult = userService.validAndChangePassword(username, oldPwd, pwd);
+            if(changeResult.equalsIgnoreCase("success"))  {
+                return "redirect:/logout";
+            }
+            error = changeResult;
+        }
+        model.addAttribute("error", error);
+        return "changePwd";
     }
 
 
