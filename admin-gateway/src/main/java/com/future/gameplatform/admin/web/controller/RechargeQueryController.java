@@ -57,6 +57,7 @@ public class RechargeQueryController {
             long myTime=(nowDate.getTime()/1000)-60*60*24*30;
 
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            nowDate.setTime(nowDate.getTime() + 1000*60*60*24);
             model.addAttribute("enddate", simpleDateFormat.format(nowDate));
             nowDate.setTime(myTime * 1000);
             model.addAttribute("begindate", simpleDateFormat.format(nowDate));
@@ -91,6 +92,7 @@ public class RechargeQueryController {
             long myTime=(nowDate.getTime()/1000)-60*60*24*30;
 
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            nowDate.setTime(nowDate.getTime() + 1000*60*60*24);
             model.addAttribute("enddate", simpleDateFormat.format(nowDate));
             nowDate.setTime(myTime * 1000);
             model.addAttribute("begindate", simpleDateFormat.format(nowDate));

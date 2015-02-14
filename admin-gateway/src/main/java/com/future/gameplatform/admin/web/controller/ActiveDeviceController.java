@@ -52,6 +52,7 @@ public class ActiveDeviceController {
 
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
             String selectedCp = "all_multi";
+            nowDate.setTime(nowDate.getTime() + 1000*60*60*24);
             String endDate = simpleDateFormat.format(nowDate);
             nowDate.setTime(myTime*1000);
             String beginDate = simpleDateFormat.format(nowDate);
